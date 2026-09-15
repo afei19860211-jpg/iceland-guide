@@ -158,6 +158,7 @@ details.day summary::-webkit-details-marker{display:none}
   border-radius:10px;padding:8px 12px}
 .app b{font-size:13px;color:var(--ink)}
 .app span{font-size:11.5px;color:var(--ink2)}
+.applist li.app{padding:8px 10px 8px 32px;border-bottom:0}
 
 /* ── Tab + photos + oper-img ─────────── */
 .tabbar{display:flex;gap:0;border-bottom:1.5px solid var(--hair);margin-top:-1px}
@@ -273,7 +274,6 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
     <path class="seg" data-d="D9" d="M174.9,317.9 L178.2,371.4 L145.9,374.9 L95.6,383.7 L73.0,388.2 L87.9,356.6 L123.6,347.4 L174.9,317.9" stroke="#E11D48"/>
     <path class="seg" data-d="D11" d="M174.9,317.9 L279.6,430.9 L199.4,567.6 L244.2,512.3" stroke="#65A30D"/>
     <path class="seg" data-d="D13" d="M244.2,512.3 L185.7,545.8" stroke="#64748B"/>
-        <circle class="poi" cx="199.4" cy="567.6" r="4"><title>蓝湖</title></circle>
     <circle class="poi" cx="185.7" cy="545.8" r="4"><title>KEF</title></circle>
     <circle class="poi" cx="491.8" cy="666.9" r="4"><title>黑沙滩</title></circle>
     <circle class="poi" cx="746.9" cy="526.2" r="4"><title>冰河湖</title></circle>
@@ -316,8 +316,8 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 <a href="#D8"><span class="od"><span class="odnum mono" style="background:#0E8A9E">D8</span><span class="odate mono">9.30 周三</span></span><span class="otitle">进斯奈山 · 草帽山日落</span><span class="ometa">235km · 🏨 福斯·斯奈山</span></a>
 <a href="#D9"><span class="od"><span class="odnum mono" style="background:#C2415B">D9</span><span class="odate mono">10.1 周四</span></span><span class="otitle">★逆时针环半岛</span><span class="ometa">230km · 🏨 福斯·斯奈山</span></a>
 <a href="#D10"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D10</span><span class="odate mono">10.2 周五</span></span><span class="otitle">半岛慢生活</span><span class="ometa">0–80km · 🏨 福斯·斯奈山</span></a>
-<a href="#D11"><span class="od"><span class="odnum mono" style="background:#5E8C31">D11</span><span class="odate mono">10.3 周六</span></span><span class="otitle">蓝湖 → 雷克雅未克</span><span class="ometa">190km · 🏨 Center Plaza</span></a>
-<a href="#D12"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D12</span><span class="odate mono">10.4 周日</span></span><span class="otitle">观鲸 · 雷市收尾</span><span class="ometa">0km · 🏨 Center Plaza</span></a>
+<a href="#D11"><span class="od"><span class="odnum mono" style="background:#5E8C31">D11</span><span class="odate mono">10.3 周六</span></span><span class="otitle">返雷市 · 完整 City Walk</span><span class="ometa">190km · 🏨 Center Plaza</span></a>
+<a href="#D12"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D12</span><span class="odate mono">10.4 周日</span></span><span class="otitle">博物馆日 · 雷市收尾</span><span class="ometa">0km · 🏨 Center Plaza</span></a>
 <a href="#D13"><span class="od"><span class="odnum mono" style="background:#64748B">D13</span><span class="odate mono">10.5 周一</span></span><span class="otitle">从容早晨 · 还车 ✈ 哥本哈根</span><span class="ometa">47km · 🏨 Wakeup CPH</span></a>
 <a href="#D14"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D14</span><span class="odate mono">10.6 周二</span></span><span class="otitle">哥本哈根整日 · 购物主场 + 万圣节蒂沃利</span><span class="ometa">步行 · 🏨 Wakeup CPH</span></a>
 <a href="#D15"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D15</span><span class="odate mono">10.7 周三</span></span><span class="otitle">退税 · 返京</span><span class="ometa">— · 🏨 回京</span></a></div>
@@ -349,8 +349,8 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
     <span class="dkm mono">步行+地铁</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button></div>
   <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">08:30</span></div><div class="c">小美人鱼（赶早没人）→ 吉菲昂喷泉<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Den+Lille+Havfrue">Den Lille Havfrue ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">10:00</span></div><div class="c">**始祖鸟 Arc'teryx Pilestræde 16**（新店 · 周四 10–19）+ 隔壁街 April 咖啡（全球#3）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Arc%27teryx+Copenhagen">Arc'teryx Copenhagen ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">11:00</span></div><div class="c">**ILLUM 商场**：注册会员首单 9 折 · **5 楼户外折扣区有鸟 7 折**（折上折≈国内 5 折）· Georg Jensen 9 折再退 14–15%<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Illum+Copenhagen">Illum Copenhagen ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">10:00</span></div><div class="c"><b>始祖鸟 Arc'teryx Pilestræde 16</b>（新店 · 周四 10–19）+ 隔壁街 April 咖啡（全球#3）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Arc%27teryx+Copenhagen">Arc'teryx Copenhagen ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">11:00</span></div><div class="c"><b>ILLUM 商场</b>：注册会员首单 9 折 · <b>5 楼户外折扣区有鸟 7 折</b>（折上折≈国内 5 折）· Georg Jensen 9 折再退 14–15%<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Illum+Copenhagen">Illum Copenhagen ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">11:30</span></div><div class="c">阿美琳堡宫卫兵换岗<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Amalienborg">Amalienborg ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">12:30</span></div><div class="c">Torvehallerne 市场午餐：Hallernes 开放三明治（鱼籽虾仁款）+ HAV 扇贝 + Den Grønne Kutter 烤海虾 + Coffee Collective 手冲<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Torvehallerne">Torvehallerne ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">14:30</span></div><div class="c">新港运河游船 1h（~95 DKK）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Nyhavn">Nyhavn ↗</a></div></div>
@@ -370,9 +370,9 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button><button class="tabbtn" data-tab="photo">📷 照片 (1)</button><button class="tabbtn" data-tab="map">🗺 地图</button></div>
   <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">11:00</span></div><div class="c">退房 → 地铁 15 分钟去 CPH 机场</div></div>
         <div class="it"><div class="t"><span class="tm mono">14:00</span></div><div class="c">FI305 起飞（Standard 含 23kg 托运）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">15:20</span></div><div class="c">落地 KEF · **到达厅免税店买酒**（比市区便宜 30–50%）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">15:40</span></div><div class="c">出海关→取行李→找**穿梭巴士候车点**（跟「Car Rental Shuttle Bus / Bílaleigur」指示牌走，图解见下方）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">16:15</span></div><div class="c">取车：穿梭巴士 5 分钟→租车中心 · 办手续+**绕车拍视频**（轮毂/玻璃/油表/里程表）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Keflavik+International+Airport">Keflavik International Airport ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">15:20</span></div><div class="c">落地 KEF · <b>到达厅免税店买酒</b>（比市区便宜 30–50%）</div></div>
+        <div class="it"><div class="t"><span class="tm mono">15:40</span></div><div class="c">出海关→取行李→找<b>穿梭巴士候车点</b>（跟「Car Rental Shuttle Bus / Bílaleigur」指示牌走，图解见下方）</div></div>
+        <div class="it"><div class="t"><span class="tm mono">16:15</span></div><div class="c">取车：穿梭巴士 5 分钟→租车中心 · 办手续+<b>绕车拍视频</b>（轮毂/玻璃/油表/里程表）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Keflavik+International+Airport">Keflavik International Airport ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">17:15</span></div><div class="c">Fosshotel Reykjavík 入住（有停车场）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fosshotel+Reykjavik">Fosshotel Reykjavik ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">18:00</span></div><div class="c">Bæjarins Beztu 全料热狗 ~880 ISK<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=B%C3%A6jarins+Beztu+Pylsur">Bæjarins Beztu Pylsur ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c">哈帕音乐厅（免费 · 二三层拍剪影）→ 太阳航海者<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Harpa+Concert+Hall">Harpa Concert Hall ↗</a></div></div>
@@ -402,7 +402,7 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
         <div class="it"><div class="t"><span class="tm mono">14:45</span></div><div class="c">黄金瀑布：上下两个观景台都去<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gullfoss+Waterfall+Parking">Gullfoss Waterfall Parking ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">15:45</span></div><div class="c">Brúarfoss 蓝色秘境（Brúarás 停车 750 · 步行 5 分钟）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Br%C3%BAar%C3%A1s+parking">Brúarás parking ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">16:45</span></div><div class="c">Kerið 火山湖（门票 700）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Keri%C3%B0+Crater">Kerið Crater ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">17:45</span></div><div class="c">塞尔福斯入住蓝巴——**桑拿热水浴池走起**<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Selfoss+Iceland">Selfoss Iceland ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">17:45</span></div><div class="c">塞尔福斯入住蓝巴——<b>桑拿热水浴池走起</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Selfoss+Iceland">Selfoss Iceland ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c">晚餐 ☕+正餐一并 Kaffi Krús（咖啡+羊肉汤）/ Menam 泰餐 + Bónus 补货</div></div>
         <div class="oper-img"><img loading="lazy" src="images/car-fuel-steps.webp" alt="car-fuel-steps"></div>
         <div class="oper-img"><img loading="lazy" src="images/car-parking-meter.webp" alt="car-parking-meter"></div>
@@ -427,11 +427,11 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
         <div class="it"><div class="t"><span class="tm mono">10:30</span></div><div class="c">Gljúfrabúi 隐藏瀑布（北 600m 岩缝钻入）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Glj%C3%BAfrab%C3%BAi">Gljúfrabúi ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">11:00</span></div><div class="c">斯科加瀑布：晴天双彩虹 · 右侧台阶 20 分钟登顶（停车 1,000）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sk%C3%B3gafoss">Skógafoss ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">12:00</span></div><div class="c">Kvernufoss：能走到瀑布后面，几乎没人<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kvernufoss">Kvernufoss ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">12:45</span></div><div class="c">☕ **Skool Beans 黄色校车咖啡馆**（斯科加以南 5 分钟·去 DC-3 必经路·木火炉·猫 Jeff 彩蛋）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Skool+Beans">Skool Beans ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">12:45</span></div><div class="c">☕ <b>Skool Beans 黄色校车咖啡馆</b>（斯科加以南 5 分钟·去 DC-3 必经路·木火炉·猫 Jeff 彩蛋）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Skool+Beans">Skool Beans ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">13:15</span></div><div class="c">DC-3 飞机残骸（接驳往返 3,000 ISK · 半小时一班）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=S%C3%B3lheimasandur+Parking">Sólheimasandur Parking ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">15:15</span></div><div class="c">迪霍拉里海岬：120 米玄武岩拱门（停车 750）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Dyrh%C3%B3laey+Lighthouse">Dyrhólaey Lighthouse ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">16:15</span></div><div class="c">雷尼斯黑沙滩：**先看红黄绿警告灯** · 离浪 20m+ · 绝不背对海（停车 1,000）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Reynisfjara+Parking">Reynisfjara Parking ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">17:30</span></div><div class="c">维克入住（带厨房）→ **买齐 D6 晚餐食材** → N1 加满油<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=V%C3%ADk+Iceland">Vík Iceland ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">16:15</span></div><div class="c">雷尼斯黑沙滩：<b>先看红黄绿警告灯</b> · 离浪 20m+ · 绝不背对海（停车 1,000）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Reynisfjara+Parking">Reynisfjara Parking ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">17:30</span></div><div class="c">维克入住（带厨房）→ <b>买齐 D6 晚餐食材</b> → N1 加满油<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=V%C3%ADk+Iceland">Vík Iceland ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c">Black Crust 黑披萨（辣吞拿/鸭肉腰果）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Black+Crust+Pizzeria">Black Crust Pizzeria ↗</a></div></div>
         <div class="oper-img"><img loading="lazy" src="images/car-single-bridge.webp" alt="car-single-bridge"></div>
         <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：塞里雅兰停车场 · Skógar 营地 · Black Beach Restaurant（需消费）· Katla VC</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：砍 DC-3（接驳照样湿身）提早到维克：Lava Show（镇小极易售罄，提前订）+Skógar 博物馆+Skool Beans 校车咖啡馆</span></div></div>
@@ -474,7 +474,7 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
         <div class="it"><div class="t"><span class="tm mono">12:30</span></div><div class="c">维克午餐 / Lava Show 补场<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=V%C3%ADk+Iceland">Vík Iceland ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">14:30</span></div><div class="c">Lava Centre 火山互动馆（4,990 · 雨天佳）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Lava+Centre">Lava Centre ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">17:00</span></div><div class="c">Secret Lagoon 泡汤（4,500 · 1891 年最老温泉 · 含硫摘银饰）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Secret+Lagoon">Secret Lagoon ↗</a><span class="badge">已开售可订</span></div></div>
-        <div class="it"><div class="t"><span class="tm mono">19:30</span></div><div class="c">塞尔福斯蓝巴入住 · Bónus 采购斯奈山段 · **Selfoss 加满油**</div></div>
+        <div class="it"><div class="t"><span class="tm mono">19:30</span></div><div class="c">塞尔福斯蓝巴入住 · Bónus 采购斯奈山段 · <b>Selfoss 加满油</b></div></div>
         <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：冰河湖（免费简易）· 羽毛峡谷（免费简易）· Skógar · Lava Centre · Selfoss 加油站</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：本日就是缓冲日：D6 被取消的徒步/船今晨补场</span></div></div>
         <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Seljavellir+Guesthouse&destination=Selfoss+Iceland&waypoints=Diamond+Beach%7CFja%C3%B0r%C3%A1rglj%C3%BAfur+Parking%7CV%C3%ADk+Iceland%7CLava+Centre%7CSecret+Lagoon"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
   </div>
@@ -487,7 +487,7 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
     <span class="dkm mono">235km</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button><button class="tabbtn" data-tab="photo">📷 照片 (1)</button></div>
   <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">08:30</span></div><div class="c">出发 → Hvalfjörður 海底隧道（免费 · 开灯 90）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">10:15</span></div><div class="c">博尔加内斯：Geirabakarí 肉桂卷 + **Bónus 大采购（三天食材）**<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Geirabakar%C3%AD+Borgarnes">Geirabakarí Borgarnes ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">10:15</span></div><div class="c">博尔加内斯：Geirabakarí 肉桂卷 + <b>Bónus 大采购（三天食材）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Geirabakar%C3%AD+Borgarnes">Geirabakarí Borgarnes ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">12:00</span></div><div class="c">Gerðuberg 玄武岩墙路旁拍照<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ger%C3%B0uberg+Cliffs">Gerðuberg Cliffs ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">15:30</span></div><div class="c">斯蒂基斯霍尔米入住 → ☕ Narfeyrarbakarí 海港露台下午茶 → Súgandisey 灯塔小岛 360°<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Stykkish%C3%B3lmur">Stykkishólmur ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">17:15</span></div><div class="c">草帽山日落机位（日落 ~19:10 · 提前 1h 占位 · ⚠观景台维修中查状态 · 停车 1,000）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kirkjufellsfoss+Parking">Kirkjufellsfoss Parking ↗</a></div></div>
@@ -507,7 +507,7 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
     <span class="dkm mono">230km</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button><button class="tabbtn" data-tab="photo">📷 照片 (5)</button></div>
   <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">09:00</span></div><div class="c">出发（Rt574 路窄侧风 · 全程 60 以下）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">09:45</span></div><div class="c">海豹滩：**低潮前后 1h 海豹最多**（查 tides.vedur.is）· 往左走 10–15 分钟海角最密（停车 1,000）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ytri+Tunga">Ytri Tunga ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">09:45</span></div><div class="c">海豹滩：<b>低潮前后 1h 海豹最多</b>（查 tides.vedur.is）· 往左走 10–15 分钟海角最密（停车 1,000）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ytri+Tunga">Ytri Tunga ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">10:45</span></div><div class="c">布迪尔黑教堂（停车免费 · 风大无遮挡）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=B%C3%BA%C3%B0akirkja">Búðakirkja ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">11:30</span></div><div class="c">Rauðfeldsgjá 岩缝峡谷（湿滑 · 大风天跳过）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rau%C3%B0feldsgj%C3%A1">Rauðfeldsgjá ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">12:15</span></div><div class="c">Arnarstapi 石堆雕像+海岸悬崖步道 · Hellnar 咖啡站午餐（停车免费）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Arnarstapi+Parking">Arnarstapi Parking ↗</a></div></div>
@@ -531,8 +531,8 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
   <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">09:30</span></div><div class="c">自然醒 · Narfeyrarbakarí 早餐看海港<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Stykkish%C3%B3lmur">Stykkishólmur ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">11:00</span></div><div class="c">四选一：鲨鱼博物馆尝 Hákarl（1,600–2,000 · 配 Black Death）/ Ólafsvík 兜风 / 国家公园游客中心 / 书店咖啡<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bjarnarh%C3%B6fn">Bjarnarhöfn ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">13:00</span></div><div class="c">午餐 Sjávarpakkhúsið（若昨天没吃）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">16:00</span></div><div class="c">整理行李 · 酒店热池 · **最后一晚极光窗口**</div></div>
-        <div class="it"><div class="t"><span class="tm mono">·</span></div><div class="c">⚠ 观鲸今天无船（Láki 赛季 9.30 止，已移 D12 雷市）</div></div>
+        <div class="it"><div class="t"><span class="tm mono">16:00</span></div><div class="c">整理行李 · 酒店热池 · <b>最后一晚极光窗口</b></div></div>
+        <div class="it"><div class="t"><span class="tm mono">·</span></div><div class="c">⚠ 观鲸已全程取消（原 Láki / D12 Elding 两案均移除）</div></div>
         <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：镇上设施 · 鲨鱼博物馆有厕所</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：全天室内外皆可：鲨鱼馆/书店咖啡/酒店热池</span></div></div>
         <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Stykkish%C3%B3lmur&destination=Bjarnarh%C3%B6fn"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
   </div>
@@ -541,18 +541,19 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 
 <details class="day" id="D11">
   <summary><span class="dnum mono" style="background:#5E8C31">D11</span>
-    <span class="ddate mono">10.3 周六</span><span class="dtitle">蓝湖 → 雷克雅未克</span>
+    <span class="ddate mono">10.3 周六</span><span class="dtitle">返雷市 · 完整 City Walk</span>
     <span class="dkm mono">190km</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button><button class="tabbtn" data-tab="map">🗺 地图</button></div>
   <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">09:30</span></div><div class="c">退房 → Borgarnes Geirabakarí 最后一次厕所+肉桂卷<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Geirabakar%C3%AD+Borgarnes">Geirabakarí Borgarnes ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">12:30</span></div><div class="c">蓝湖入场：**护发素不冲掉 · 摘首饰 · 看好手机**（Comfort 动态价 · 现场不售票）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Blue+Lagoon+Iceland">Blue Lagoon Iceland ↗</a><span class="badge">已列预订</span></div></div>
-        <div class="it"><div class="t"><span class="tm mono">15:30</span></div><div class="c">Blue Lagoon Shop：硅泥面膜+姆明杯<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Blue+Lagoon+Iceland">Blue Lagoon Iceland ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">16:30</span></div><div class="c">雷市入住 Center Plaza（P1 停车楼或 EasyPark）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Center+Hotels+Plaza">Center Hotels Plaza ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">18:00</span></div><div class="c">轻量傍晚：热狗 → Laugavegur 慢逛（Brauð&Co / Valdís 花少冰淇淋 / MJÚK 摸了再买）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Laugavegur">Laugavegur ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">20:00</span></div><div class="c">晚餐 Fish Company：龙虾汤+北极红点鲑（需订）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fish+Company+Reykjav%C3%ADk">Fish Company Reykjavík ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">21:30</span></div><div class="c">Hús máls 书屋酒吧 live（花少同款 · 无门票 · 给小费唱到很晚）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=H%C3%BAs+m%C3%A1ls+og+menningar">Hús máls og menningar ↗</a></div></div>
-        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：镇上 · Borgarnes · 蓝湖更衣室</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：蓝湖关闭→Sky Lagoon（Saman 14,990 起 · 必须提前订）</span></div></div>
-        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Stykkish%C3%B3lmur&destination=Center+Hotels+Plaza&waypoints=Geirabakar%C3%AD+Borgarnes%7CBlue+Lagoon+Iceland"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
+        <div class="it"><div class="t"><span class="tm mono">10:30</span></div><div class="c">可选（天气好）：Hvalfjörður 鲸湾旧沿海公路（Rt47 · +45min · 观景停车 2–3 处）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hvalfj%C3%B6r%C3%B0ur">Hvalfjörður ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">12:15</span></div><div class="c">雷市午餐：<b>Icelandic Street Food 花少羊肉汤</b>（羊肉汤续番茄汤）/ Svarta Kaffiíd 面包碗<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Icelandic+Street+Food">Icelandic Street Food ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">13:15</span></div><div class="c">入住 Center Plaza（P1 停车楼或 EasyPark）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Center+Hotels+Plaza">Center Hotels Plaza ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">14:00</span></div><div class="c">完整 city walk（从 D12 挪来）：教堂登塔 1,400 → 彩虹街 → Brauð&Co/Valdís 花少冰淇淋/MJÚK 摸了再买 → 托宁湖 → 中国博物馆（花少）→ 哈帕坐坐<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hallgr%C3%ADmskirkja">Hallgrímskirkja ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">17:00</span></div><div class="c">☕ Mokka 老咖啡馆 / Roasters ⭐5；甜 Kaffi Loki 黑麦面包冰淇淋（教堂对面）</div></div>
+        <div class="it"><div class="t"><span class="tm mono">19:30</span></div><div class="c">晚餐 Fish Company：龙虾汤+北极红点鲑（需订）/ 备选 Apotek · Old Iceland 羊肉<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fish+Company+Reykjav%C3%ADk">Fish Company Reykjavík ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">21:00</span></div><div class="c">极光夜二选一：<b>海上极光船</b>（~9,900 · 含热饮 · 没看到免费重乘）｜ <b>Hús máls 书屋酒吧 live</b>（花少同款 · 无门票）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=H%C3%BAs+m%C3%A1ls+og+menningar">Hús máls og menningar ↗</a></div></div>
+        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：Borgarnes · 市区咖啡店/商场</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：city walk 沿线有屋檐 + Illum 商场；或把 Perlan/FlyOver 提前到今天</span></div></div>
+        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Stykkish%C3%B3lmur&destination=Center+Hotels+Plaza&waypoints=Geirabakar%C3%AD+Borgarnes%7CHallgr%C3%ADmskirkja"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
   </div>
   <div class="tabpan" data-tab="map"><div class="mwrap"><img class="mimg" loading="lazy" src="images/map-reykjavik-parking.webp" alt="map-reykjavik-parking"></div></div>
   </div>
@@ -560,19 +561,18 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 
 <details class="day" id="D12">
   <summary><span class="dnum mono" style="background:#8A8D8A">D12</span>
-    <span class="ddate mono">10.4 周日</span><span class="dtitle">观鲸 · 雷市收尾</span>
+    <span class="ddate mono">10.4 周日</span><span class="dtitle">博物馆日 · 雷市收尾</span>
     <span class="dkm mono">0km</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button><button class="tabbtn" data-tab="photo">📷 照片 (2)</button></div>
-  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">08:00</span></div><div class="c">Sandholt 早餐（北非蛋/莓果华夫饼）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sandholt+Bakery">Sandholt Bakery ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">08:30</span></div><div class="c">旧港集合：**提前 1h 晕船药** · 防风保暖层<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Elding+Reykjavik">Elding Reykjavik ↗</a><span class="badge">已列预订</span></div></div>
-        <div class="it"><div class="t"><span class="tm mono">09:00</span></div><div class="c">Elding 观鲸 3h（Classic 14,500 · 没看到=赠免费重乘券）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">12:30</span></div><div class="c">Icelandic Street Food 花少羊肉汤（**点羊肉汤可以续番茄汤** · 华夫饼咖啡无限）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Icelandic+Street+Food">Icelandic Street Food ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">14:00</span></div><div class="c">Perlan 通票 7,090（真冰洞+Áróra 极光球幕+360°）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Perlan">Perlan ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">16:30</span></div><div class="c">补 city walk：教堂登塔 1,400 → 彩虹街 → 托宁湖 → 中国博物馆（花少）；☕ Mokka 老咖啡馆或 Roasters ⭐5 收尾<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hallgr%C3%ADmskirkja">Hallgrímskirkja ↗</a></div></div>
+  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">08:30</span></div><div class="c">Sandholt 早餐（北非蛋/莓果华夫饼）或 Brauð & Co 肉桂卷<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sandholt+Bakery">Sandholt Bakery ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">09:30</span></div><div class="c"><b>Perlan 通票 7,090</b>（真冰洞 0°C <b>进馆带薄外套</b>+Áróra 极光球幕+360°）——观鲸取消后的上午主场<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Perlan">Perlan ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">12:30</span></div><div class="c">午餐：<b>Sægreifinn 龙虾汤</b>（旧港绿房子）/ Svarta Kaffiíd 面包碗 / Just Wingin' It 鸡翅<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=S%C3%A6greifinn">Sægreifinn ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">14:00</span></div><div class="c">下午任选：<b>Whales of Iceland 巨鲸模型馆 4,290</b>（不观鲸的"陆地平替"）/ FlyOver 5,490 / 丁丁博物馆 3,500 / Illum·Epal 购物<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Whales+of+Iceland">Whales of Iceland ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">17:00</span></div><div class="c">☕ Mokka 老咖啡馆 / Roasters ⭐5（若 D11 没去）；哈帕音乐厅免费坐坐</div></div>
         <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c">Messinn 铁锅煎鱼 Plokkfiskur / Íslenski Barinn 龙虾热狗；甜 Kaffi Loki 黑麦面包冰淇淋<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Messinn">Messinn ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">·</span></div><div class="c">预报好→极光团兜底；今晚打包行李</div></div>
-        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：酒店市区 · Perlan · 博物馆</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：Perlan/FlyOver/丁丁博物馆/Whales of Iceland/购物全室内</span></div></div>
-        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Center+Hotels+Plaza&destination=Perlan&waypoints=Elding+Reykjavik%7CHallgr%C3%ADmskirkja%7CSandholt+Bakery"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
+        <div class="it"><div class="t"><span class="tm mono">·</span></div><div class="c">预报好→极光团兜底/极光船二刷；今晚打包行李</div></div>
+        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：酒店市区 · Perlan · 博物馆</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：Perlan/FlyOver/丁丁博物馆/Whales of Iceland/购物全室内（今天本来就该下雨）</span></div></div>
+        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Center+Hotels+Plaza&destination=Perlan&waypoints=Sandholt+Bakery%7CWhales+of+Iceland"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
   </div>
   <div class="tabpan" data-tab="photo"><div class="pgrid"><div class="ph"><img loading="lazy" src="images/d12-perlan.webp" alt="d12-perlan"></div><div class="ph"><img loading="lazy" src="images/d12-harpa.webp" alt="d12-harpa"></div></div></div>
   </div>
@@ -583,13 +583,13 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
     <span class="ddate mono">10.5 周一</span><span class="dtitle">从容早晨 · 还车 ✈ 哥本哈根</span>
     <span class="dkm mono">47km</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button></div>
-  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">09:00</span></div><div class="c">从容早晨：Sandholt / 最后补货；蓝湖没泡成→Sky Lagoon 兜底</div></div>
+  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">09:00</span></div><div class="c">从容早晨：Sandholt / Laugavegur 最后补货；☕ Mokka 收尾（国家博物馆周一闭馆）</div></div>
         <div class="it"><div class="t"><span class="tm mono">11:30</span></div><div class="c">退房 → Rt41 沿路加满油留小票</div></div>
-        <div class="it"><div class="t"><span class="tm mono">13:30</span></div><div class="c">KEF 还车（**拍照留底·流程图见下方**）→ **先退税再托运**：一层 Arion Bank 盖章 · 吊牌别剪 · >100k ISK 可能查验</div></div>
+        <div class="it"><div class="t"><span class="tm mono">13:30</span></div><div class="c">KEF 还车（<b>拍照留底·流程图见下方</b>）→ <b>先退税再托运</b>：一层 Arion Bank 盖章 · 吊牌别剪 · >100k ISK 可能查验</div></div>
         <div class="it"><div class="t"><span class="tm mono">16:30</span></div><div class="c">FI 起飞 KEF→CPH（申根内部无边检）<span class="badge">待出票</span></div></div>
         <div class="it"><div class="t"><span class="tm mono">21:45</span></div><div class="c">落地哥本哈根 → Wakeup 入住（明天才是整天）</div></div>
         <div class="oper-img"><img loading="lazy" src="images/car-return-process.webp" alt="car-return-process"></div>
-        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：蓝湖（若去）/机场</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：航班延误或早到：机场免税店慢慢逛</span></div></div>
+        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：机场</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：航班延误或早到：机场免税店慢慢逛</span></div></div>
         <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Center+Hotels+Plaza&destination=Keflavik+International+Airport"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
   </div>
   </div>
@@ -602,9 +602,9 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button></div>
   <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">10:00</span></div><div class="c">罗森堡宫王室珠宝（周一闭馆今天开）→ 新嘉士伯美术馆 → 圆塔<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rosenborg+Castle">Rosenborg Castle ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">12:30</span></div><div class="c">午餐 Torvehallerne 二刷（昨天没吃够的摊位）或 Kronborg 传统开放三明治（炸鲱鱼招牌）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Torvehallerne">Torvehallerne ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">14:00</span></div><div class="c">**购物主场**：始祖鸟补货（周四 10–19）→ ILLUM → Georg Jensen → Royal Copenhagen 瓷器 → HAY House → Lego 定制小人（全世界独一份）→ Illums Bolighus 家居<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Arc%27teryx+Copenhagen">Arc'teryx Copenhagen ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">14:00</span></div><div class="c"><b>购物主场</b>：始祖鸟补货（周四 10–19）→ ILLUM → Georg Jensen → Royal Copenhagen 瓷器 → HAY House → Lego 定制小人（全世界独一份）→ Illums Bolighus 家居<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Arc%27teryx+Copenhagen">Arc'teryx Copenhagen ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">16:30</span></div><div class="c">Christiana 外围随性走走 / Design Letters 买二送一小首饰<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Str%C3%B8get+Copenhagen">Strøget Copenhagen ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">17:00</span></div><div class="c">**蒂沃利万圣节场**（10.2–11.1 · 17:00 后灯饰最佳 · 查当日闭园时间）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Tivoli+Copenhagen">Tivoli Copenhagen ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">17:00</span></div><div class="c"><b>蒂沃利万圣节场</b>（10.2–11.1 · 17:00 后灯饰最佳 · 查当日闭园时间）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Tivoli+Copenhagen">Tivoli Copenhagen ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">20:30</span></div><div class="c">晚餐：Kødbyens Fiskebar 肉市区米其林推荐海鲜（青口贝必点 9.5/10）或 Pluto（牛肉塔塔+龙虾）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=K%C3%B8dbyens+Fiskebar">Kødbyens Fiskebar ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">22:00</span></div><div class="c">回酒店打包（明天退税+回京 · 吊牌别剪）</div></div>
         <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：商场/博物馆/市政厅全免费</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：美术馆+商场室内兜底，蒂沃利雨天照常开</span></div></div>
@@ -619,8 +619,8 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
     <span class="dkm mono">—</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button></div>
   <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">10:00</span></div><div class="c">最后扫货：皇家曲奇/琥珀/Georg Jensen/Lego/Læsø 盐<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Str%C3%B8get+Copenhagen">Strøget Copenhagen ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">13:00</span></div><div class="c">**提前 2.5h 到机场**：Global Blue 退税柜台（排队 30–60 分钟正常）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">15:00</span></div><div class="c">**CPH 机场免税区 10 店**（T2/T3 间）：Summerbird 顶奢巧克力 · Lumène 精华 · Woods_ 面霜 · Royal Copenhagen · Lego · Design Letters · Pilgrim · Illums Bolighus——免税直降价<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Copenhagen+Airport">Copenhagen Airport ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">13:00</span></div><div class="c"><b>提前 2.5h 到机场</b>：Global Blue 退税柜台（排队 30–60 分钟正常）</div></div>
+        <div class="it"><div class="t"><span class="tm mono">15:00</span></div><div class="c"><b>CPH 机场免税区 10 店</b>（T2/T3 间）：Summerbird 顶奢巧克力 · Lumène 精华 · Woods_ 面霜 · Royal Copenhagen · Lego · Design Letters · Pilgrim · Illums Bolighus——免税直降价<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Copenhagen+Airport">Copenhagen Airport ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">19:05</span></div><div class="c">CA878 起飞（回程托运 2×23kg · 血拼额度翻倍）</div></div>
         <div class="it"><div class="t"><span class="tm mono">09:55+1</span></div><div class="c">落地北京（留一天缓冲再上班）</div></div>
         <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：商场/机场全免费</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：—</span></div></div>
@@ -655,7 +655,7 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
       <div class="bk"><h3><svg class="icon"><use href="#i-ticket"/></svg>活动 · 全部待订<span class="tag warn">待下单</span></h3>
         <div class="row"><span class="l">冰川徒步（Troll 3h / A.A. 4h 二选一，24h 可免费取消）</span><span class="r">9.28 10:00</span></div>
         <div class="row"><span class="l">冰河湖游船 · 选可免费改期票</span><span class="r">9.28 15:00</span></div>
-        <div class="row"><span class="l">蓝湖 Comfort / Vatnshellir / Elding 观鲸 / Friðheimar 花少午餐 / Sjávargrillið 订位 / Secret Lagoon</span><span class="r">见行前清单</span></div>
+        <div class="row"><span class="l">Vatnshellir / Friðheimar 花少午餐 / Sjávargrillið 订位 / Secret Lagoon / D8 Krauma·Hvammsvík 二选一（蓝湖·观鲸已取消）</span><span class="r">见行前清单</span></div>
       </div>
     </div>
   </section>
@@ -670,42 +670,79 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
       <li>冰河湖游船：选可免费改期的票价档</li>
     </ul></div>
     <div class="tier t1 chkwrap"><h4>🟠 3 天内（D-9）</h4><ul>
-      <li>蓝湖 10.3 12:30（现场不售票）｜ Friðheimar 9.26 13:30 花少午餐</li>
-      <li>Vatnshellir 10.1 16:30 ｜ Elding 观鲸 10.4 09:00（选可改期）</li>
+      <li>Friðheimar 9.26 13:30 花少午餐 ｜ 蓝湖 10.3 已取消（生理期）——若出票官网退</li>
+      <li>Vatnshellir 10.1 16:30 ｜ D8 泡汤二选一：Krauma / Hvammsvík（9.30 最后窗口 · 选可免费取消）</li>
       <li>Sjávargrillið 订 9.25 晚餐位 ｜ Secret Lagoon 订 9.29 场（已开售）</li>
     </ul></div>
     <div class="tier t2 chkwrap"><h4>🟡 7 天内（D-6）</h4><ul>
       <li>申根保险：含自驾救援+医疗转运，出单打印（保额 ≥3 万欧）</li>
       <li>驾照英文公证 → 发邮件给租车行书面确认接受</li>
-      <li>eSIM（冰岛+丹麦通用）｜ 信用卡设 PIN 码 ｜ 少量 ISK/DKK 现金</li>
+      <li>实体电话卡 ×2（国行无 eSIM：欧盟通用卡 or 落地 Nova）｜ 信用卡设 PIN ｜ 少量现金（<b>ISK 国内换不到——KEF 机场 ATM 取</b>）</li>
+      <li>信用卡 APP 报备出境+开境外支付（防风控冻结，两张卡都报）｜ 国内号开国际漫游收验证码</li>
+      <li>租车订单加第二驾驶员（轮流开；未登记出险可能拒赔）</li>
     </ul></div>
     <div class="tier t3 chkwrap"><h4>⚪ 出发前 3 天 / 1 天</h4><ul>
+      <li>超市采购：方便面/寿司酱油辣根/一次性勺筷/能量棒/咖啡茶包</li>
+      <li>行程+保单+证件复印件发家人 · 订单全核对（姓名/日期/含早）</li>
+      <li>Parka / EasyPark / Global Blue 注册绑卡</li>
       <li>打印：酒店单/机票/保险/活动确认函/驾照公证件</li>
       <li>Google Maps 离线包：冰岛全境 + 哥本哈根</li>
       <li>前一天：网上值机 · 查两地天气 · 充满充电宝相机</li>
     </ul></div>
-    <div class="tier" style="border-left-color:var(--blue)"><h4>📱 必装 APP（出发前全部下载）</h4>
-      <div class="applist">
-        <div class="app"><b>112 Iceland</b><span>🆘 SOS 一键发 GPS 定位</span></div>
-        <div class="app"><b>Vedur.is</b><span>🌤 天气+极光+潮汐官方预报</span></div>
-        <div class="app"><b>road.is / Fard&Vedur</b><span>🛣 实时路况+封路警报</span></div>
-        <div class="app"><b>SafeTravel</b><span>⚠️ 安全预警+旅行建议</span></div>
-        <div class="app"><b>My Aurora Forecast</b><span>🌌 KP 指数+云图追极光</span></div>
-        <div class="app"><b>Radarbot</b><span>📷 超速摄像头提醒（7月实测推荐）</span></div>
-        <div class="app"><b>Parka + EasyPark</b><span>🅿️ 停车缴费（部分景点仅 EasyPark）</span></div>
-        <div class="app"><b>Google Maps</b><span>🗺 离线地图导航</span></div>
-        <div class="app"><b>Global Blue</b><span>💰 退税进度追踪</span></div>
-        <div class="app"><b>Wolt</b><span>🍔 雷市外卖（累瘫酒店点）</span></div>
-        <div class="app"><b>Vegaskattur</b><span>📋 公里路税查询（确认租车行代扣）</span></div>
-        <div class="app"><b>航司 APP</b><span>✈️ 国航/冰岛航空值机+动态</span></div>
-      </div>
+    <div class="tier chkwrap" style="border-left-color:var(--blue)"><h4>📱 必装 APP（出发前全部下载 · 点卡片勾选）</h4>
+      <ul class="applist">
+        <li class="app"><b>112 Iceland</b><span>🆘 SOS 一键发 GPS 定位</span></li>
+        <li class="app"><b>Vedur.is</b><span>🌤 天气+极光+潮汐官方预报</span></li>
+        <li class="app"><b>road.is / Fard&Vedur</b><span>🛣 实时路况+封路警报</span></li>
+        <li class="app"><b>SafeTravel</b><span>⚠️ 安全预警+旅行建议</span></li>
+        <li class="app"><b>My Aurora Forecast</b><span>🌌 KP 指数+云图追极光</span></li>
+        <li class="app"><b>Radarbot</b><span>📷 超速摄像头提醒（7月实测推荐）</span></li>
+        <li class="app"><b>Parka + EasyPark</b><span>🅿️ 停车缴费（部分景点仅 EasyPark）</span></li>
+        <li class="app"><b>Google Maps</b><span>🗺 离线地图导航</span></li>
+        <li class="app"><b>Global Blue</b><span>💰 退税进度追踪</span></li>
+        <li class="app"><b>Wolt</b><span>🍔 雷市外卖（累瘫酒店点）</span></li>
+        <li class="app"><b>航司 APP</b><span>✈️ 国航/冰岛航空值机+动态</span></li>
+      </ul>
     </div>
   </section>
 
 
   <section>
     <h2><svg class="icon"><use href="#i-star"/></svg>行李清单 · 点条目勾选 <span class="counter" id="baggageCount"></span></h2>
-    <div id="baggageZone" class="chklist"><ul><li><b>护照</b>+申根签证 · 驾照+<b>英文公证件</b> · 证件照 2 张</li><li>VISA/Master ×2（<b>已设 PIN</b>）· 银联备用 · 少量 ISK/DKK 现金</li><li>全部订单打印件 + 手机云备份</li><li>排汗保暖内衣 ×2（美利奴最佳）· 抓绒/薄羽绒 ×2 + 羽绒内胆</li><li><b>硬壳冲锋衣 + 冲锋裤（真防水）</b></li><li><b>防水登山鞋（大半码硬底 · 冰川徒步要求 · 已磨合）</b></li><li>全包厚帽 ×2 · 脖套 · 手套 ×2（触屏薄 + 防水厚）</li><li>户外厚袜 5–7 双 · 一次性内衣 · 睡衣 · <b>拖鞋（酒店不提供）</b></li><li><b>泳衣 ×2 + 快干毛巾</b>（蓝湖/Secret Lagoon）</li><li>哥本哈根城市装 1 套（风衣+步行鞋）</li><li>手机 ×2 + <b>车充</b> + 充电宝 20000mAh</li><li><b>磁吸手机支架</b>（租车不一定配）</li><li>相机 + 备用电池 ×3（低温贴身放）+ <b>三脚架</b>（极光）</li><li>无人机（<b>island.sh 已备案</b> · 羽毛峡谷可飞）</li><li>转换插头（冰岛 C/F · 丹麦 C/K）+ 小排插</li><li>保温杯 · 折叠烧水壶 · 头灯 · 墨镜（防雪盲+防眩光）</li><li>密封袋 · 旅行枕/蒸汽眼罩 · 眼罩耳塞 · 两支笔</li><li>湿厕纸/酒精湿巾 · <b>眼药水</b>（风大极干）</li><li>冰爪 · 暖宝宝/暖足贴 · 手机挂绳</li><li>高保湿面霜/身体乳 · 润唇膏+护手霜 · 防晒</li><li><b>护发素大瓶</b>（蓝湖用：涂了不冲掉+丸子头）</li><li>牙刷牙膏（酒店不提供）· 滋润型防水化妆品</li><li>感冒/肠胃/退烧/止痛/创可贴 · 个人处方药+处方证明</li><li><b>晕船药</b>（观鲸/冰河湖船 · 提前 1h 服）</li><li>能量棒/坚果 · 泡面/火锅底料 · 咖啡/茶包</li></ul></div>
+    <div id="baggageZone" class="chklist"><ul><li><b>护照</b>+申根签证 · 驾照+<b>英文公证件</b> · 证件照 2 张</li><li>VISA/Master ×2（<b>已设 PIN</b>）· 银联备用 · 少量 ISK/DKK 现金</li><li>全部订单打印件 + 手机云备份</li><li>排汗保暖内衣 ×2（美利奴最佳）· 抓绒/薄羽绒 ×2 + 羽绒内胆</li><li><b>硬壳冲锋衣 + 冲锋裤（真防水）</b></li><li><b>防水登山鞋（大半码硬底 · 冰川徒步要求 · 已磨合）</b></li><li>全包厚帽 ×2 · 脖套 · 手套 ×2（触屏薄 + 防水厚）</li><li><b>正红/姜黄毛线帽 或 亮色围巾</b>（黑沙滩·黑教堂·蓝冰·极光夜四大名片点睛）</li><li>户外厚袜 5–7 双 · 一次性内衣 · 睡衣 · <b>拖鞋（酒店不提供）</b></li><li><b>泳衣 ×2 + 快干毛巾</b>（Secret Lagoon / D8 泡汤 / 酒店私汤）</li><li>哥本哈根城市装 1 套（风衣+步行鞋）</li><li>手机 ×2 + <b>车充</b> + 充电宝 20000mAh</li><li><b>磁吸手机支架</b>（租车不一定配）</li><li>相机 + 备用电池 ×3（低温贴身放）+ <b>三脚架</b>（极光）</li><li>无人机（<b>island.sh 已备案</b> · 羽毛峡谷可飞）</li><li>转换插头（冰岛 C/F · 丹麦 C/K）+ 小排插</li><li>保温杯 · 折叠烧水壶 · 头灯 · 墨镜（防雪盲+防眩光）</li><li>密封袋 · 旅行枕/蒸汽眼罩 · 眼罩耳塞 · 两支笔</li><li>湿厕纸/酒精湿巾 · <b>眼药水</b>（风大极干）</li><li>冰爪 · 暖宝宝/暖足贴 · 手机挂绳</li><li>高保湿面霜/身体乳 · 润唇膏+护手霜 · 防晒</li><li><b>护发素大瓶</b>（蓝湖用：涂了不冲掉+丸子头）</li><li>牙刷牙膏（酒店不提供）· 滋润型防水化妆品</li><li>感冒/肠胃/退烧/止痛/创可贴 · 个人处方药+处方证明</li><li><b>晕船药</b>（冰河湖 Zodiac 船 · 提前 1h 服）</li><li>能量棒/坚果 · <b>方便面</b>/火锅底料 · <b>寿司酱油+辣根小包</b>（托运） · <b>一次性勺筷</b>+纸巾 · 咖啡/茶包</li></ul></div>
+  </section>
+
+  <section>
+    <h2><svg class="icon"><use href="#i-star"/></svg>每日穿搭 · 对着风景配色</h2>
+    <div class="tips"><ul>
+      <li><b>三原则</b>：硬壳全天在身→出片靠<b>中间层颜色+帽子围巾点睛</b>；跟背景<b>撞色别融色</b>；情侣同色系一深一浅、或共用一个点亮色</li>
+      <li><b>撞色口诀</b>：黑沙/玄武岩/黑教堂→<b>红·橙·姜黄</b>；蓝冰/雪山→暖橙·酒红；绿苔原→藏蓝·砖红（忌绿卡其）；白瀑布→深色或高饱和</li>
+      <li><b>出发前采购</b>：正红/姜黄毛线帽 ×1–2、女款酒红焦糖中间层、亮色大围巾——几十块出片率翻倍</li>
+      <li><b>特殊场景</b>：极光夜亮色帽是照片唯一识别色（红×极光绿=互补）；温泉深色泳衣+摘银饰+丸子头；瀑布日中间层选速干</li>
+    </ul></div>
+    <div class="cards">
+<div class="bk"><h3><svg class="icon"><use href="#i-star"/></svg>哥本哈根段 D1–D2</h3>
+<div class="row"><span class="l"><b>D1 9.23 新港彩色房子 · 黄昏</b><br><span style="font-size:12.5px;color:var(--ink2)">男：风衣+深色裤+白/灰内搭 ｜ 女：风衣+燕麦/奶油内搭</span></span><span class="r">点睛：中性色<br>不抢彩色房子</span></div>
+<div class="row"><span class="l"><b>D2 9.24 海港 · 游船（风大）</b><br><span style="font-size:12.5px;color:var(--ink2)">男：风衣+毛衣+深灰围巾 ｜ 女：风衣+<b>红/酒红围巾</b></span></span><span class="r">点睛：红围巾<br>灰蓝海港第一眼</span></div>
+</div>
+<div class="bk"><h3><svg class="icon"><use href="#i-star"/></svg>冰岛段 D3–D13</h3>
+<div class="row"><span class="l"><b>D3 9.25 航班+哈帕+彩虹街+晚餐</b><br><span style="font-size:12.5px;color:var(--ink2)">男：飞行舒适层，晚餐换针织衫 ｜ 女：<b>酒红/焦糖亮色中间层</b></span></span><span class="r">哈帕拍剪影<br>彩虹街穿中性</span></div>
+<div class="row"><span class="l"><b>D4 9.26 黄金圈 · 绿裂谷/金瀑布/红坡蓝湖</b><br><span style="font-size:12.5px;color:var(--ink2)">男：藏蓝中间层+灰黑壳 ｜ 女：<b>焦糖/南瓜橙中间层</b></span></span><span class="r">点睛：橙红脖套<br>防水手套+墨镜</span></div>
+<div class="row"><span class="l"><b>D5 9.27 南岸四瀑布 → 黑沙滩压轴 ★最出片</b><br><span style="font-size:12.5px;color:var(--ink2)">男：黑/深灰壳+<b>正红毛线帽</b> ｜ 女：深色壳+<b>红/姜黄围巾</b>，头发扎高</span></span><span class="r">黑沙配亮色<br>中间层速干</span></div>
+<div class="row"><span class="l"><b>D6 9.28 冰川徒步+冰河湖+钻石沙滩</b><br><span style="font-size:12.5px;color:var(--ink2)">男：<b>橙红中间层</b>（湖边脱壳拍） ｜ 女：<b>正红中间层+红帽</b></span></span><span class="r">蓝冰×红衣<br>= 冰岛名片</span></div>
+<div class="row"><span class="l"><b>D7 9.29 钻石沙滩日出+绿峡谷+老温泉</b><br><span style="font-size:12.5px;color:var(--ink2)">男：深蓝+羽绒内胆（全程最冷清晨） ｜ 女：<b>奶油白中间层</b>（粉金天光绝美）</span></span><span class="r">深色泳衣<br>摘银饰+丸子头</span></div>
+<div class="row"><span class="l"><b>D8 9.30 渔港小镇+草帽山金色日落</b><br><span style="font-size:12.5px;color:var(--ink2)">男：黑/深灰+芥末黄点睛 ｜ 女：<b>奶油白/米色中间层</b></span></span><span class="r">浅色吃光<br>深色剪影·二选一</span></div>
+<div class="row"><span class="l"><b>D9 10.1 环半岛 · 海豹滩/黑教堂/黑卵石滩</b><br><span style="font-size:12.5px;color:var(--ink2)">男：深色壳+红帽 ｜ 女：黑壳+<b>正红围巾</b></span></span><span class="r">黑教堂×红围巾<br>= 斯奈山名片</span></div>
+<div class="row"><span class="l"><b>D10 10.2 小镇慢生活+酒店热池</b><br><span style="font-size:12.5px;color:var(--ink2)">男：灰/藏蓝针织（松弛感） ｜ 女：焦糖/燕麦色</span></span><span class="r">泳衣随身<br>极光巡逻带亮帽</span></div>
+<div class="row"><span class="l"><b>D11 10.3 返雷市·完整 city walk+极光船</b><br><span style="font-size:12.5px;color:var(--ink2)">男：城市轻便装+舒适步行鞋 ｜ 女：<b>酒红/焦糖城市装</b>（彩虹街中性点睛）</span></span><span class="r">极光船带红帽<br>夜拍唯一识别色</span></div>
+<div class="row"><span class="l"><b>D12 10.4 博物馆日+市区+极光兜底</b><br><span style="font-size:12.5px;color:var(--ink2)">男：城市轻便+好走的鞋 ｜ 女：同左+<b>南瓜/酒红点缀</b>（室内暖光）</span></span><span class="r">Perlan 冰洞 0°C<br>进馆带薄外套</span></div>
+<div class="row"><span class="l"><b>D13 10.5 还车+飞行</b><br><span style="font-size:12.5px;color:var(--ink2)">男女同：深色舒适飞行装，好脱分层</span></span><span class="r">轻羽绒当机上毯<br>退税商品随身</span></div>
+</div>
+<div class="bk"><h3><svg class="icon"><use href="#i-star"/></svg>返程哥本哈根 D14–D15</h3>
+<div class="row"><span class="l"><b>D14 10.6 美术馆+购物+蒂沃利万圣节 🎃</b><br><span style="font-size:12.5px;color:var(--ink2)">男：风衣+毛衣 ｜ 女：<b>酒红/南瓜色</b>呼应节日灯饰</span></span><span class="r">暖色系<br>最吃暖光灯</span></div>
+<div class="row"><span class="l"><b>D15 10.7 扫货+长飞行</b><br><span style="font-size:12.5px;color:var(--ink2)">男女同：宽松舒适+好脱分层</span></span><span class="r">护颈枕+保湿<br>分层应对温差</span></div>
+</div>
+    </div>
   </section>
 
   <section>
@@ -719,7 +756,7 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
       <li><b>停车</b>：Parka 绑卡；雷市 P1–P4 分区计费（红 660 ISK/h 起），周末 P3/P4 免费</li>
       <li><b>支付</b>：全境刷卡，>7,500 ISK 要 PIN；无小费；自来水冷水直饮</li>
       <li><b>极光</b>：云图比 KP 重要；晴夜 21:00 后每半小时抬头；机位草帽山/黑沙滩/钻石沙滩</li>
-      <li><b>温泉</b>：先裸洗后泡；蓝湖=护发素不冲掉+摘首饰+看好手机</li>
+      <li><b>温泉</b>：先裸洗后泡；地热水=护发素不冲掉+摘首饰+看好手机</li>
       <li><b>省钱</b>：Bónus 自炊；午餐比晚餐便宜 1/3；到达厅免税店买酒省 30–50%</li>
     </ul></div>
   </section>
@@ -727,6 +764,19 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
   <section>
     <h2><svg class="icon"><use href="#i-star"/></svg>美食地图 · 花少同款与沿线餐厅</h2>
     <div class="cards">
+<div class="bk"><h3><svg class="icon"><use href="#i-star"/></svg>每日停靠小镇 & 多选速查</h3>
+<div class="row"><span class="l"><b>D3 9.25 雷市</b> ｜ 哈帕+旧港 · 彩虹街</span><span class="r">热狗 880 / Svarta Kaffiíd</span></div>
+<div class="row"><span class="l"><b>D4 9.26 黄金圈</b> ｜ Laugarvatn 湖镇 · Flúðir（Fontana）</span><span class="r">午：Friðheimar ★<br>晚：Kaffi Krús / Menam / Tryggvaskáli</span></div>
+<div class="row"><span class="l"><b>D5 9.27 南岸</b> ｜ Skógar · Skool Beans 黄校车</span><span class="r">晚：Black Crust / Wok In / Suður-Vík / Smiðjan</span></div>
+<div class="row"><span class="l"><b>D6 9.28 冰川线</b> ｜ Kirkjubæjarklaustur · Skaftafell</span><span class="r">晚：自炊 / Smyrlabjörg / Hali / Pakkhús</span></div>
+<div class="row"><span class="l"><b>D7 9.29 西返</b> ｜ Vík · Hvolsvöllur（Lava Centre）</span><span class="r">午：Vík 简餐<br>晚：Kaffi Krús / Menam / Tryggvaskáli</span></div>
+<div class="row"><span class="l"><b>D8 9.30 进斯奈山</b> ｜ Borgarnes · Grundarfjörður 红房子</span><span class="r">午：Geirabakarí / Einherjar<br>晚：Plánku / Narfeyrarstofa</span></div>
+<div class="row"><span class="l"><b>D9 10.1 环半岛</b> ｜ Arnarstapi→Hellnar · Ólafsvík（N1）</span><span class="r">午：Hellnar 咖啡站 / 野餐<br>晚：Sjávarpakkhúsið 鱼薯</span></div>
+<div class="row"><span class="l"><b>D10 10.2 慢生活</b> ｜ Stykkishólmur · Bjarnarhöfn 鲨鱼馆</span><span class="r">早：Narfeyrarbakarí<br>晚：Plánku / 自炊</span></div>
+<div class="row"><span class="l"><b>D11 10.3 返雷市</b> ｜ Borgarnes · Hvalfjörður 旧路（可选）</span><span class="r">午：Icelandic Street Food ★<br>晚：Fish Company / Apotek / Old Iceland</span></div>
+<div class="row"><span class="l"><b>D12 10.4 博物馆日</b> ｜ 雷市全天</span><span class="r">午：Sægreifinn 龙虾汤<br>晚：Messinn / Íslenski Barinn</span></div>
+<div class="row"><span class="l"><b>D13–15 哥本哈根</b> ｜ Torvehallerne · Strøget · 机场 T2/T3</span><span class="r">Kronborg 炸鲱鱼 / Fiskebar / Pluto<br>咖啡三神：Collective·April·La Cabra</span></div>
+</div>
 <div class="bk"><h3><svg class="icon"><use href="#i-star"/></svg>花少同款 · 8 处</h3>
 <div class="row"><span class="l"><b>Friðheimar 番茄农场</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fri%C3%B0heimar">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">番茄汤+面包自助 3,740 · 番茄啤酒 · 单点制</span></span><span class="r">人均 240–350<br>D4 午餐 13:00 · 必须预约</span></div>
 <div class="row"><span class="l"><b>Sjávargrillið</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sj%C3%A1vargrilli%C3%B0+Reykjav%C3%ADk">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">慢煮鳕鱼 / 烤鹿肉 / 贝汤</span></span><span class="r">330–730<br>D3 晚餐 19:30 · 订位</span></div>
@@ -760,25 +810,26 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 <div class="row"><span class="l"><b>Schønnemann（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sch%C3%B8nnemann+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">1857 老店 · 开放式三明治</span></span><span class="r">300–500<br>D13/D14 晚餐 · 需订</span></div>
 <div class="row"><span class="l"><b>Torvehallerne（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Torvehallerne">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">市场：Hallernes 开放三明治 / HAV 扇贝 / Den Grønne Kutter 烤海虾 345 DKK 拼盘 / Ma Poule 鹅肝鹌鹑 / Coffee Collective 手冲</span></span><span class="r">100–345<br>D2 午餐 + D14 二刷 · 本地人美食心脏</span></div>
 <div class="row"><span class="l"><b>Kødbyens Fiskebar（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=K%C3%B8dbyens+Fiskebar">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">肉市区米其林推荐海鲜：青口贝(9.5/10)·烤蝶鱼(10/10)·鱿鱼面·海藻黄油面包免费</span></span><span class="r">300–500<br>D14 晚餐 · 11:30-24:00 需订</span></div>
-<div class="row"><span class="l"><b>Maple Casual Dining（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Maple+Casual+Dining">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">谷歌 4.9 · 牛肉/芦笋浓汤/猪肋排 · 17:00-21:00</span></span><span class="r">300–500<br>D2 晚餐 · **提前一天订否则吃不上**</span></div>
+<div class="row"><span class="l"><b>Maple Casual Dining（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Maple+Casual+Dining">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">谷歌 4.9 · 牛肉/芦笋浓汤/猪肋排 · 17:00-21:00</span></span><span class="r">300–500<br>D2 晚餐 · <b>提前一天订否则吃不上</b></span></div>
 <div class="row"><span class="l"><b>Høst / Marv & Ben / Pluto（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=H%C3%B8st+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">新北欧性价比 / 米其林推荐 6 年 / 牛肉塔塔+龙虾量大</span></span><span class="r">300–600<br>D2 或 D14 晚餐备选</span></div>
 <div class="row"><span class="l"><b>Restaurant Kronborg（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Kronborg+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">北欧传统 smørrebrød 老店 · 炸鲱鱼招牌 · 皇家器皿</span></span><span class="r">150–300<br>D14 午餐 · 亚洲胃适配</span></div>
 <div class="row"><span class="l"><b>咖啡三神（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Coffee+Collective+Torvehallerne">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">Coffee Collective 全球#2(Torvehallerne店) · April #3(Pilestræde 37 始祖鸟隔壁 · 周一闭) · La Cabra #5(Møntergade 12)</span></span><span class="r">45–65 DKK<br>D2/D14 · 咖啡天堂一日打卡</span></div>
-<div class="row"><span class="l"><b>Hart 烘焙（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hart+Bageri">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">Noma 系烘焙师：小豆蔻可颂/Spandauer/Tebirkes · 7:30 开门 9:30 前货全</span></span><span class="r">40–100<br>**两极**：一帖封神一帖劝退——路过可买不必专程</span></div>
+<div class="row"><span class="l"><b>Hart 烘焙（哥本哈根）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hart+Bageri">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">Noma 系烘焙师：小豆蔻可颂/Spandauer/Tebirkes · 7:30 开门 9:30 前货全</span></span><span class="r">40–100<br><b>两极</b>：一帖封神一帖劝退——路过可买不必专程</span></div>
 </div>
 </div>
   </section>
 
   <section>
     <h2><svg class="icon"><use href="#i-rain"/></svg>温泉 · 按行程可选</h2>
+    <div style="font-size:13px;color:var(--ink2);margin-bottom:10px"><b>生理期 10.2–10.8</b>：泡汤窗口只剩 <b>9.26 / 9.29 / 9.30</b>——蓝湖、Sky Lagoon、Sundhöll 已全部取消；<b>Secret Lagoon（9.29）与 Krauma/Hvammsvík（9.30 二选一）是仅剩机会，尽快官网订可免费取消档</b>。</div>
     <div class="bk">
-<div class="row"><span class="l"><b>Blue Lagoon 蓝湖</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Blue+Lagoon+Iceland">地图 ↗</a></span><span class="r">Comfort 11,990–17,990 动态<br>D11 12:30 已列预订 · 护发素不冲掉/摘首饰/看好手机</span></div>
-<div class="row"><span class="l"><b>Sky Lagoon</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sky+Lagoon+Reykjav%C3%ADk">地图 ↗</a></span><span class="r">Saman 14,990 起 / Sér 17,990<br>蓝湖关闭的备胎 · 七步仪式 · 必须提前订</span></div>
-<div class="row"><span class="l"><b>Secret Lagoon</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Secret+Lagoon+Fl%C3%BA%C3%B0ir">地图 ↗</a></span><span class="r">4,500（≤14 岁 260）<br>D7 17:00 已开售 · 1891 年最老 · 含硫摘银饰</span></div>
-<div class="row"><span class="l"><b>Hvammsvík 海边温泉</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hvammsv%C3%ADk+Hot+Springs">地图 ↗</a></span><span class="r">5,900–14,000<br>D8 可选插班 · 黑沙滩上泡汤看海</span></div>
-<div class="row"><span class="l"><b>Krauma</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Krauma+Deildartunguhver">地图 ↗</a></span><span class="r">7,490<br>D8 可选替代 · 欧洲最大温泉旁</span></div>
-<div class="row"><span class="l"><b>Fontana</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Laugarvatn+Fontana">地图 ↗</a></span><span class="r">4,990 + 地热面包体验<br>D4 早收工可选 · 热土烤 24h 黑麦面包配黄油</span></div>
-<div class="row"><span class="l"><b>Sundhöll 市立泳池</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sundh%C3%B6ll+Reykjav%C3%ADk">地图 ↗</a></span><span class="r">1,330<br>D12 傍晚可选 · 本地人日常 · 最便宜的温泉体验</span></div>
+<div class="row"><span class="l"><b>Secret Lagoon ⭐</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Secret+Lagoon+Fl%C3%BA%C3%B0ir">地图 ↗</a></span><span class="r">4,500（≤14 岁 260）<br>D7 17:00 · 9.29 生理期前 · 已开售尽快订</span></div>
+<div class="row"><span class="l"><b>Krauma ⭐</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Krauma+Deildartunguhver">地图 ↗</a></span><span class="r">7,490<br>D8 9.30 二选一 · 顺 Rt50 · 欧洲最大温泉旁</span></div>
+<div class="row"><span class="l"><b>Hvammsvík 海边温泉</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hvammsv%C3%ADk+Hot+Springs">地图 ↗</a></span><span class="r">5,900–14,000<br>D8 9.30 二选一 · 黑沙滩海景 · 需订时段</span></div>
+<div class="row"><span class="l"><b>蓝巴酒店桑拿/私汤</b></span><span class="r">含在房费<br>D4 9.26 + D7 9.29 两晚 · 零额外安排</span></div>
+<div class="row"><span class="l"><b>Fontana</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Laugarvatn+Fontana">地图 ↗</a></span><span class="r">4,990 + 地热面包体验<br>D4 9.26 早收工可选 · 热土烤 24h 黑麦面包</span></div>
+<div class="row"><span class="l"><b>Blue Lagoon 蓝湖</b></span><span class="r">Comfort 11,990–17,990<br>❌ 已取消（生理期）· 若出票→My Booking 退</span></div>
+<div class="row"><span class="l"><b>Sky Lagoon / Sundhöll</b></span><span class="r">14,990 起 / 1,330<br>❌ 已取消（生理期窗口内）</span></div>
 </div>
   </section>
 
@@ -788,7 +839,7 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 <div class="tier t3"><h4>南岸</h4><div style="display:flex;flex-wrap:wrap;gap:6px"><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Seljalandsfoss+Parking">塞里雅兰停车场（含停车费） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Skogar+Campsite">Skógar 营地 ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Katla+Visitor+Centre">Katla 游客中心（免费） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Black+Beach+Restaurant+V%C3%ADk">Black Beach 餐厅（需消费） ↗</a></div></div>
 <div class="tier t3"><h4>冰河湖段</h4><div style="display:flex;flex-wrap:wrap;gap:6px"><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=N1+Kirkjub%C3%A6jarklaustur">N1 Kirkjubæjarklaustur（免费） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Skaftafell+Parking">Skaftafell 游客中心（免费干净） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=J%C3%B6kuls%C3%A1rl%C3%B3n">冰河湖停车场（免费简易） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Fja%C3%B0r%C3%A1rglj%C3%BAfur+Parking">羽毛峡谷（免费简易） ↗</a></div></div>
 <div class="tier t3"><h4>斯奈山</h4><div style="display:flex;flex-wrap:wrap;gap:6px"><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Geirabakar%C3%AD+Borgarnes">Geirabakarí（博尔加内斯） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=N1+Baulan+Borgarnes">N1 Baulan ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=N1+Sta%C3%B0arsk%C3%A1li">N1 Staðarskáli（免费） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Salerni+Stykkisholmur">Salerni 公共厕所（斯蒂基斯霍尔米，免费） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Arnarstapi+Parking">Arnarstapi 咖啡站（~200） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Dj%C3%BApal%C3%B3nssandur+Parking">Djúpalónssandur 停车场（免费） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=N1+%C3%93lafsv%C3%ADk">Ólafsvík N1 ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Saga+Center+Grundarfj%C3%B6r%C3%B0ur">Saga Center Grundarfjörður（免费） ↗</a></div></div>
-<div class="tier t3"><h4>雷市·机场·哥本哈根</h4><div style="display:flex;flex-wrap:wrap;gap:6px"><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Harpa+Concert+Hall">哈帕音乐厅（~200） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Blue+Lagoon+Iceland">蓝湖更衣室 ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Keflavik+International+Airport">KEF 机场 ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Illum+Copenhagen">哥本哈根：商场/市政厅/地铁全免费 ↗</a></div></div>
+<div class="tier t3"><h4>雷市·机场·哥本哈根</h4><div style="display:flex;flex-wrap:wrap;gap:6px"><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Harpa+Concert+Hall">哈帕音乐厅（~200） ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Keflavik+International+Airport">KEF 机场 ↗</a><a class="chip" target="_blank" rel="noopener" style="text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Illum+Copenhagen">哥本哈根：商场/市政厅/地铁全免费 ↗</a></div></div>
   </section>
 
   <section>
@@ -797,7 +848,7 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 <div class="bk"><h3><svg class="icon"><use href="#i-star"/></svg>必买 TOP</h3>
 <div class="row"><span class="l"><b>MJÚK 花少同款帽（EPAL）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mj%C3%BAk+Reykjav%C3%ADk">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">两方实测：✔舒服可选球球颜色 ✘扎手掉毛/姐姐同款须配货——摸了再买</span></span><span class="r">300–1,000</span></div>
 <div class="row"><span class="l"><b>Omnom 巧克力</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Omnom+Chocolate+Reykjav%C3%ADk">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">海盐/牛奶巧克力最佳 · 几何碎片+设计包装</span></span><span class="r">60–120</span></div>
-<div class="row"><span class="l"><b>Blue Lagoon 硅泥面膜</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Blue+Lagoon+Iceland">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">泡完湖顺手买（D11）· 送人最有纪念意义</span></span><span class="r">400–600</span></div>
+<div class="row"><span class="l"><b>Blue Lagoon 硅泥面膜</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Blue+Lagoon+Iceland">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">机场免税店/雷市专柜可买（不去蓝湖也能买）· 送人最有纪念意义</span></span><span class="r">400–600</span></div>
 <div class="row"><span class="l"><b>Lopapeysa 手织毛衣</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Handknitting+Association+of+Iceland">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">老奶奶手织独一无二 · 会扎别贴身</span></span><span class="r">800–2,000</span></div>
 <div class="row"><span class="l"><b>Bioeffect EGF 精华</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=EPAL+Design+Store+Reykjav%C3%ADk">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">机场免税 15ml ≈16–19k ISK 比市区划算</span></span><span class="r">900–2,000</span></div>
 <div class="row"><span class="l"><b>FISCHERSUND 香水</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fischersund+Reykjav%C3%ADk">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">冰岛味道本尊：冰川/苔原/火山</span></span><span class="r">900–1,600</span></div>
@@ -817,18 +868,133 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 </div>
 <div class="tier t2" style="margin-top:12px"><h4>退税速记</h4><ul>
 <li>冰岛：单店满 6,000 ISK 开 Global Blue 单 → KEF 一层 Arion Bank 盖章（<b>先退税再托运 · 吊牌别剪</b>）→ 信用卡退款 3–8 周</li>
-<li>丹麦：单店满 300 DKK → CPH 机场 Global Blue（D15 提前 2.5h 到，排队 30–60 分钟正常）；**ILLUM 可前后几天合并开单**，买得越多退得越多</li>
+<li>丹麦：单店满 300 DKK → CPH 机场 Global Blue（D15 提前 2.5h 到，排队 30–60 分钟正常）；<b>ILLUM 可前后几天合并开单</b>，买得越多退得越多</li>
 <li>折扣季只有夏（7–8 月）与冬（12 底–1 月）——10 月没有，别等</li>
 </ul></div>
 </div><div class="bk" style="margin-top:12px"><h3><svg class="icon"><use href="#i-star"/></svg>哥本哈根 · 始祖鸟与北欧购物</h3>
 <div class="row"><span class="l"><b>始祖鸟 Arc'teryx 专卖店</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Arc%27teryx+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">Pilestræde 16（市中心圈）· 周三四五 10–19 · 货全可退税</span></span><span class="r">无折扣</span></div>
-<div class="row"><span class="l"><b>ILLUM 5 楼折扣区</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Illum+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">**鸟 7 折区**（XS/S 断码这边货足）+ 注册会员首单 9 折 + 退税 13–15% ≈ 国内 5 折；旁边猛犸象 6 折/攀山鼠 6 折</span></span><span class="r">≈5 折</span></div>
+<div class="row"><span class="l"><b>ILLUM 5 楼折扣区</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Illum+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)"><b>鸟 7 折区</b>（XS/S 断码这边货足）+ 注册会员首单 9 折 + 退税 13–15% ≈ 国内 5 折；旁边猛犸象 6 折/攀山鼠 6 折</span></span><span class="r">≈5 折</span></div>
 <div class="row"><span class="l"><b>Georg Jensen</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Georg+Jensen+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">丹麦国宝银饰 · 注册会员 9 折再退 14–15%</span></span><span class="r">9 折+退税</span></div>
 <div class="row"><span class="l"><b>Royal Copenhagen / HAY House / Illums Bolighus</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Royal+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">皇家瓷器手绘 / 设计家居 / 老牌家居百货</span></span><span class="r">瓷器杯 300+</span></div>
-<div class="row"><span class="l"><b>Lego 旗舰店</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Lego+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">**免费组装定制小人偶**（全世界独一份）· Strøget 主街</span></span><span class="r">小人 ~60 DKK</span></div>
+<div class="row"><span class="l"><b>Lego 旗舰店</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Lego+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)"><b>免费组装定制小人偶</b>（全世界独一份）· Strøget 主街</span></span><span class="r">小人 ~60 DKK</span></div>
 <div class="row"><span class="l"><b>Design Letters / Skultuna / Pilgrim</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Design+Letters+Copenhagen">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">字母设计文具杯子(戒指买二送一) / 瑞典黄铜首饰 / 丹麦平价首饰</span></span><span class="r">50–500</span></div>
-<div class="row"><span class="l"><b>CPH 机场免税区（T2/T3 之间）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Copenhagen+Airport">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">Summerbird 顶奢巧克力 / Lumène 精华 / Woods 面霜 / Royal Copenhagen / Lego——**D15 提前 2.5h 逛**</span></span><span class="r">免税价</span></div>
+<div class="row"><span class="l"><b>CPH 机场免税区（T2/T3 之间）</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Copenhagen+Airport">地图 ↗</a><br><span style="font-size:12.5px;color:var(--ink2)">Summerbird 顶奢巧克力 / Lumène 精华 / Woods 面霜 / Royal Copenhagen / Lego——<b>D15 提前 2.5h 逛</b></span></span><span class="r">免税价</span></div>
 </div>
+  </section>
+
+  <section>
+    <h2><svg class="icon"><use href="#i-moon"/></svg>极光实战 · 本次旅程主题</h2>
+    <div style="font-size:13px;color:var(--ink2);margin-bottom:10px">月相<b>渐入佳境</b>：行程从满月开始（D4-D7 月照 90-100%，强爆发照样震撼、月光雪山=天然反光板），之后逐晚变残、月出越来越晚——<b>D8-D10 斯奈山段（暗窗 19:30-22:30+）和 D11-D12 雷市尾声才是主力战场</b>。9 月底-10 月初正值秋分地磁活跃统计高峰，同样 KP3 更容易真爆发。⚠️ 出发前用 Moon Phase / timeanddate.com 复核每晚月出时刻（月照度是精确值）。</div>
+    <div class="cards">
+<div class="bk"><h3><svg class="icon"><use href="#i-moon"/></svg>每晚极光日历 · 月照实算</h3>
+<div class="row"><span class="l"><b>D1-2 9.23-24 哥本哈根</b> ｜ 月照 88-93%</span><span class="r">☆ 不安排<br>（倒时差）</span></div>
+<div class="row"><span class="l"><b>D3 9.25 雷市</b> ｜ 满月+城市光害</span><span class="r">☆ 不安排<br>（明晚早起）</span></div>
+<div class="row"><span class="l"><b>D4 9.26 塞尔福斯·蓝巴</b> ｜ 100% 满月</span><span class="r">★★ 桑拿/浴池边抬头<br>KP≥5 才出镇</span></div>
+<div class="row"><span class="l"><b>D5 9.27 维克</b> ｜ 月照 99%</span><span class="r">★★ 黑沙滩/教堂山丘<br>别离镇太远</span></div>
+<div class="row"><span class="l"><b>D6 9.28 Seljavellir</b> ｜ 96%·零光害</span><span class="r">★★★ 门口即 B 级暗夜<br>月光雪山前景出大片</span></div>
+<div class="row"><span class="l"><b>D7 9.29 塞尔福斯</b> ｜ 月照 92%</span><span class="r">★★ 泡完汤 21:00<br>出来正好抬头</span></div>
+<div class="row"><span class="l"><b>D8 9.30 斯蒂基斯霍尔米</b> ｜ 85%·月出~22:00</span><span class="r">★★★★ 19:30-22:00 暗窗<br>草帽山日落就地等</span></div>
+<div class="row"><span class="l"><b>D9 10.1 同上</b> ｜ 75%·月出~23:00</span><span class="r">★★★★ KP≥3 就 21:00<br>再去草帽山</span></div>
+<div class="row"><span class="l"><b>D10 10.2 暗窗最长之夜</b> ｜ 65%·月出~23:40</span><span class="r">★★★★★ <b>全程主力夜</b><br>22:00 出门守草帽山</span></div>
+<div class="row"><span class="l"><b>D11 10.3 雷市</b> ｜ 47%·月出~00:00</span><span class="r">★★★ 极光船 / Hús máls<br>live 二选一</span></div>
+<div class="row"><span class="l"><b>D12 10.4 雷市兜底夜</b> ｜ 41%</span><span class="r">★★★ 预报好→小巴团<br>或极光船二刷</span></div>
+</div>
+<div class="bk"><h3><svg class="icon"><use href="#i-moon"/></svg>观测点速查 · 按住宿地</h3>
+<div class="row"><span class="l"><b>Seljavellir（D6）</b><br><span style="font-size:12.5px;color:var(--ink2)">①民宿门口/停车场（B 级暗夜）②向南 2km 海边</span></span><span class="r">0-3 分钟</span></div>
+<div class="row"><span class="l"><b>塞尔福斯（D4/D7）</b><br><span style="font-size:12.5px;color:var(--ink2)">①蓝巴室外热水浴池（泡着看）②Rt35 向北 10 分钟农田</span></span><span class="r">0-10 分钟</span></div>
+<div class="row"><span class="l"><b>维克（D5）</b><br><span style="font-size:12.5px;color:var(--ink2)">①镇东教堂山丘（俯拍小镇+极光）②Reynisfjara 停车场</span></span><span class="r">3-12 分钟</span></div>
+<div class="row"><span class="l"><b>斯蒂基斯霍尔米（D8-D10）</b><br><span style="font-size:12.5px;color:var(--ink2)">①草帽山 Kirkjufellsfoss 停车场（全岛第一前景·观景台维修查状态）②Súgandisey 灯塔岛 ③Vatnaleið 山口</span></span><span class="r">1-25 分钟</span></div>
+<div class="row"><span class="l"><b>雷市（D11-D12）</b><br><span style="font-size:12.5px;color:var(--ink2)">①Grótta 灯塔（市区最强仍有光害）②出海/出城团</span></span><span class="r">步行 40 分<br>出城 30 分</span></div>
+</div>
+    </div>
+    <div class="tips"><ul>
+      <li><b>预报三件套</b>（出发前一周每天看）：① vedur.is 云图——<b>云图>一切</b>：无云+KP2 能看到，满云+KP6 白搭 ② My Aurora Forecast（0-9 级当晚预测）③ NOAA 3 天地磁预报（看 CME 撞击时刻）</li>
+      <li><b>KP 读法</b>：KP3=全境可见（按 KP≥3 出门）；KP5=强爆发满月也压不住；KP2+无云+零光害乡村=肉眼隐约+相机显形也值得守</li>
+      <li><b>时段</b>：21:00-01:00 最活跃；晴夜每半小时扫一眼，别整晚站室外（车里等）</li>
+      <li><b>拍法</b>：手机夜景模式+固定（栏杆/车顶）曝光 5-10s；相机 14-24mm f/2.8 · ISO1600 起 · 10-15s · MF 无穷远 · RAW；<b>月光夜把雪山当前景光源</b></li>
+      <li><b>保暖与纪律</b>：站桩 1h=羽绒+帽+手套+围脖+暖宝宝贴背+保温杯热可可；车头朝住宿停好随时撤；<b>绝不为拍极光离开铺装路</b></li>
+      <li><b>活动安排</b>：乡村自由守光（D4-D10 主力·免费）→ 极光船（D11 首选 ~9,900 · 没看到免费重乘）→ 小巴团（D12 兜底 7,000-9,000 · 选可免费改期）；超级吉普摄影团不推荐</li>
+    </ul></div>
+  </section>
+
+  <section>
+    <h2><svg class="icon"><use href="#i-sun"/></svg>天气应急 · 每天出发前看一眼</h2>
+    <div style="font-size:13px;color:var(--ink2);margin-bottom:10px">原则：<b>黄警=照常但砍海边/山顶；橙警=室内预案；封路=原地不动</b>。vedur.is + road.is（电话 1777）。</div>
+    <div class="bk">
+<div class="row"><span class="l"><b>D3 雷市</b></span><span class="r">哈帕+Perlan+国家博物馆<br>（全室内）</span></div>
+<div class="row"><span class="l"><b>D4 黄金圈</b></span><span class="r">Friðheimar 延长+Fontana 泡汤<br>Kerið 快闪</span></div>
+<div class="row"><span class="l"><b>D5 南岸</b></span><span class="r">砍 DC-3 提早到维克 → Lava Show<br>（提前订！）+Skógar 博物馆</span></div>
+<div class="row"><span class="l"><b>D6 ★最关键</b></span><span class="r">徒步取消→Svartifoss 或 D7 清晨补<br>船取消→环湖步道；双取消→改住 Hella</span></div>
+<div class="row"><span class="l"><b>D7</b></span><span class="r">本身是缓冲日</span></div>
+<div class="row"><span class="l"><b>D8</b></span><span class="r">Settlement Centre+鲨鱼馆<br>早到镇上咖啡</span></div>
+<div class="row"><span class="l"><b>D9</b></span><span class="r">砍 Rauðfeldsgjá/Djúpalónssandur<br>保 Búðir/Arnarstapi；Vatnshellir=雨天完美</span></div>
+<div class="row"><span class="l"><b>D11</b></span><span class="r">暴雨照走 city walk+Illum<br>或 Perlan/FlyOver 提前</span></div>
+<div class="row"><span class="l"><b>D12</b></span><span class="r">Perlan/FlyOver/博物馆/购物全室内</span></div>
+<div class="row"><span class="l"><b>D14</b></span><span class="r">蒂沃利照常；备室内美术馆+商场</span></div>
+</div>
+    <div style="font-size:12.5px;color:var(--ink2);margin-top:10px"><b>室内弹药库（官方价）</b>：Perlan 7,090｜FlyOver 5,490｜国家博物馆 2,500｜Lava Show 5,900｜Lava Centre 4,990｜Settlement Centre 2,900｜Bjarnarhöfn 1,600–2,000｜Vatnshellir 5,900｜丁丁博物馆 3,500｜卡特拉黑冰洞 18,900｜Skool Beans 800–1,500</div>
+  </section>
+
+  <section>
+    <h2><svg class="icon"><use href="#i-car"/></svg>加油 · 按天节点</h2>
+    <div class="oper-img"><img loading="lazy" src="images/car-fuel-steps.webp" alt="car-fuel-steps"></div>
+    <div class="tips"><ul>
+      <li><b>油品</b>：92# 常规 / <b>95# 高级无铅（多数 SUV，按油盖标注）</b> / 98# / 柴油（Duster 黑枪）；油价 320-350 ISK/L；全程油费预估 €350-400；<b>加错油别启动</b></li>
+      <li><b>三种方式</b>：①信用卡——插卡→输 <b>PIN</b>→金额→抽卡→自动小票 ②<b>加油卡</b>（没 PIN 最稳）：超市买 2,000/5,000/10,000 ISK 面额 ③柜台报油枪号（郊区店关得早，提前加）</li>
+    </ul></div>
+    <div class="bk">
+<div class="row"><span class="l"><b>D3 9.25</b></span><span class="r">取车确认油量；雷市不急</span></div>
+<div class="row"><span class="l"><b>D4 9.26</b></span><span class="r">雷市出发前满；Geysir 旁 N1<br>晚 Selfoss 加满</span></div>
+<div class="row"><span class="l"><b>D5 9.27</b></span><span class="r"><b>Vík（Orkan/N1 24h）加满</b><br>明天冰河湖往返 320km·保持半箱+</span></div>
+<div class="row"><span class="l"><b>D6 9.28</b></span><span class="r">N1 Kirkjubæjarklaustur 可补<br>（24h 兼厕所）</span></div>
+<div class="row"><span class="l"><b>D7 9.29</b></span><span class="r">回程顺路；晚 Selfoss 加满</span></div>
+<div class="row"><span class="l"><b>D8 9.30</b></span><span class="r"><b>Borgarnes（N1 Baulan/Orkan）加满</b><br>进半岛前最后大站</span></div>
+<div class="row"><span class="l"><b>D9-10</b></span><span class="r">斯蒂基斯霍尔米 N1 / Ólafsvík 补给</span></div>
+<div class="row"><span class="l"><b>D11 10.3</b></span><span class="r">Borgarnes 顺路</span></div>
+<div class="row"><span class="l"><b>D13 10.5</b></span><span class="r"><b>机场前 Rt41 沿路 Orkan 加满+留小票</b></span></div>
+</div>
+    <div style="font-size:12.5px;color:var(--ink2);margin-top:10px">采购提示：<b>Borgarnes 的 Bónus</b>=进斯奈山前最后平价点；南岸在 Selfoss/Vík 补；<b>维克公寓有全套厨房——D5 顺手买齐 D6 晚餐食材</b>。</div>
+  </section>
+
+  <section>
+    <h2><svg class="icon"><use href="#i-ticket"/></svg>支付 · 网络 · 退税 · 省钱</h2>
+    <div class="tips"><ul>
+      <li><b>支付</b>：全境刷卡（含公厕热狗亭）；Visa/Master+Apple Pay；<b>刷卡 >7,500 ISK 要 PIN——出发前设好</b>；现金几乎不用（备 5 万 ISK 应急）</li>
+      <li><b>网络</b>：两台手机均为国行（<b>无 eSIM·只能实体卡</b>）——出发前淘宝买欧盟运营商通用卡（冰岛属 EEA 漫游免费；⚠️英国 Three 卡脱欧后 £2/天不划算），或落地 KEF 买本地卡：<b>Nova 最便宜</b>（1,990 含 1GB+100 分钟 vs Síminn 2,500 / Vodafone 3,500）；机场 10-11 便利店也卖。双卡槽：主槽国内卡收验证码（漫游收短信免费）+副槽流量卡；<b>南岸东段+斯奈山西部有信号空洞——离线地图必装</b></li>
+      <li><b>电压时差</b>：230V/50Hz，C/F 插头；冰岛 GMT+0 无夏令时（比北京慢 8h、比丹麦慢 2h）</li>
+      <li><b>退税（冰岛）</b>：单店满 6,000 ISK 开 Global Blue 单（以退税单为准）；实退约 11-15%；<b>冰岛买冰岛退</b>（KEF 一层 Arion Bank，先退税后托运）；餐饮住宿租车门票不可退</li>
+      <li><b>退税（丹麦）</b>：单店满 300 DKK；CPH 机场 Global Blue（预留 1h 排队）</li>
+      <li><b>省钱清单</b>：自来水直饮｜Bónus 自炊（人均砍到 1/4）｜热狗 ~880｜午餐比晚餐便宜 1/3｜景点本身全免费｜<b>到达厅免税店买酒便宜 30-50%</b></li>
+    </ul></div>
+  </section>
+
+  <section>
+    <h2><svg class="icon"><use href="#i-scroll"/></svg>语言篇 · 够用就好</h2>
+    <div style="font-size:13px;color:var(--ink2);margin-bottom:10px">冰岛/丹麦英语普及率接近 100%，大胆说。冰岛语特殊字母：<b>Þ/þ=咬舌 th</b>、Ð/ð=浊 th、Æ=爱、Ö≈厄。地名念不出没关系——<b>直接把导航词递给对方看</b>最有效。</div>
+    <div class="cards">
+<div class="bk"><h3><svg class="icon"><use href="#i-scroll"/></svg>高频句式 · 按场景</h3>
+<div class="row"><span class="l"><b>取车</b>：我有预订，姓 Yan ｜ 柴油还是汽油？</span><span class="r">I have a reservation under Yan. ｜ Is it diesel or petrol?</span></div>
+<div class="row"><span class="l"><b>还车</b>：满油还车小票在这 ｜ 押金何时退？</span><span class="r">Full tank — here's the receipt. ｜ When will the deposit be released?</span></div>
+<div class="row"><span class="l"><b>加油</b>：机器要 PIN，我的卡没有 ｜ 几号油枪？</span><span class="r">The pump asks for a PIN — mine has none. ｜ Which pump number?</span></div>
+<div class="row"><span class="l"><b>停车</b>：我用 Parka 缴过了</span><span class="r">I've paid with the Parka app.</span></div>
+<div class="row"><span class="l"><b>餐厅</b>：两位有位吗 ｜ 招牌/推荐？ ｜ 一起结账</span><span class="r">Table for two, please. ｜ What do you recommend? ｜ One bill, thanks.</span></div>
+<div class="row"><span class="l"><b>忌口</b>：不要洋葱 ｜ 海鲜过敏</span><span class="r">No onions, please. ｜ I'm allergic to shellfish.</span></div>
+<div class="row"><span class="l"><b>酒店</b>：办入住·订了两晚 ｜ 含早吗？</span><span class="r">Check-in, please — two nights. ｜ Is breakfast included?</span></div>
+<div class="row"><span class="l"><b>活动</b>：天气取消了，能退款/改期吗？</span><span class="r">Cancelled due to weather — refund or rebook?</span></div>
+<div class="row"><span class="l"><b>购物</b>：能开退税单吗 ｜ 就看看谢谢</span><span class="r">Tax refund form, please? ｜ Just looking, thanks.</span></div>
+<div class="row"><span class="l"><b>万能</b>：没听清 ｜ 能写下来吗？</span><span class="r">Sorry? ｜ Could you write it down?</span></div>
+<div class="row"><span class="l"><b>拉好感</b>：谢谢（冰岛/丹麦语）</span><span class="r">Takk！（冰岛） / Tak！（丹麦）</span></div>
+</div>
+<div class="bk"><h3><svg class="icon"><use href="#i-scroll"/></svg>冰岛路牌速认</h3>
+<div class="row"><span class="l"><b>ÓFÆRT</b> 封路/不可通行</span><span class="r">停·掉头·查 road.is</span></div>
+<div class="row"><span class="l"><b>EINBREIÐ BRÚ</b> 单车道桥</span><span class="r">先到先行·桥头等</span></div>
+<div class="row"><span class="l"><b>MALBIK ENAR</b> 铺装路到此结束</span><span class="r">减速 60 以下·拉车距</span></div>
+<div class="row"><span class="l"><b>HÆTTULEG HÁLKA</b> 危险黑冰</span><span class="r">减速·别急刹</span></div>
+<div class="row"><span class="l"><b>BILASTÆÐI</b> 停车场</span><span class="r">缴费机/Parka</span></div>
+<div class="row"><span class="l"><b>ÚTSÝNI</b> 观景点</span><span class="r">可停车拍照</span></div>
+<div class="row"><span class="l"><b>HRÍÐ</b> 暴风雪/骤雨</span><span class="r">减速开雾灯（城区外）</span></div>
+</div>
+    </div>
   </section>
 
   <div class="emer">
@@ -885,16 +1051,6 @@ const EVENTS = [
   "t": "2026-10-01T16:30:00+00:00",
   "n": "Vatnshellir 熔岩洞场次",
   "s": "提前 15 分钟到"
- },
- {
-  "t": "2026-10-03T12:30:00+00:00",
-  "n": "蓝湖入场 · Comfort",
-  "s": "Blue Lagoon"
- },
- {
-  "t": "2026-10-04T08:30:00+00:00",
-  "n": "Elding 观鲸集合 · 旧港",
-  "s": "提前 1h 晕船药"
  },
  {
   "t": "2026-10-05T13:30:00+00:00",
