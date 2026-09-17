@@ -96,9 +96,12 @@ h2::after{content:"";flex:1;height:1px;background:var(--hair)}
 .maplegend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;transform:translateY(1px)}
 
 /* ── overview grid ───────────────────── */
-.ov{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:8px}
+.ov{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}
 .ov a{display:flex;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--hair);
-  border-radius:12px;padding:9px 12px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+  border-radius:12px;padding:8px 10px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+@media(min-width:640px){.ov{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:980px){.ov{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:1280px){.ov{grid-template-columns:repeat(5,1fr)}}
 .ov a:hover{border-color:var(--blue)}
 .ov .od{display:flex;align-items:center;gap:8px}
 .ov .odnum{font-weight:800;font-size:11px;color:var(--paper);border-radius:6px;padding:1px 7px}
@@ -283,16 +286,16 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
     <circle class="poi" cx="315.5" cy="489.4" r="4"><title>黄金圈</title></circle>
     <circle class="poi" cx="536.8" cy="590.3" r="4"><title>羽毛峡谷</title></circle>
     <circle class="poi" cx="458.1" cy="640.0" r="4"><title>斯科加</title></circle>
-        <g class="stay"><rect x="237.2" y="505.29999999999995" width="14" height="14" rx="3"/><text x="256.2" y="510.29999999999995">D3</text><text class="sub" x="256.2" y="523.3">雷克雅未克</text></g>
+        <g class="stay"><rect x="237.2" y="505.29999999999995" width="14" height="14" rx="3"/><text x="256.2" y="510.29999999999995">D2–3</text><text class="sub" x="256.2" y="523.3">雷克雅未克</text></g>
     <g class="stay"><rect x="319.7" y="546.7" width="14" height="14" rx="3"/><text x="338.7" y="551.7">D4/D7</text><text class="sub" x="338.7" y="564.7">塞尔福斯</text></g>
     <g class="stay"><rect x="495.5" y="656.5" width="14" height="14" rx="3"/><text x="514.5" y="661.5">D5</text><text class="sub" x="514.5" y="674.5">维克</text></g>
     <g class="stay"><rect x="821.8" y="489.9" width="14" height="14" rx="3"/><text x="840.8" y="494.9">D6</text><text class="sub" x="840.8" y="507.9">霍芬/Seljavellir</text></g>
     <g class="stay"><rect x="167.9" y="310.9" width="14" height="14" rx="3"/><text x="186.9" y="315.9">D8-10</text><text class="sub" x="186.9" y="328.9">斯蒂基斯霍尔米</text></g>
     <g class="stay"><rect x="237.2" y="505.29999999999995" width="14" height="14" rx="3"/><text x="256.2" y="510.29999999999995">D11-12</text><text class="sub" x="256.2" y="523.3">雷克雅未克</text></g>
-    <g class="stay"><rect x="3275.7" y="2267.0" width="14" height="14" rx="3"/><text x="3294.7" y="2272.0">D13-14</text><text class="sub" x="3294.7" y="2285.0">哥本哈根</text></g>
+    <g class="stay"><rect x="3275.7" y="2267.0" width="14" height="14" rx="3"/><text x="3294.7" y="2272.0">D12-14</text><text class="sub" x="3294.7" y="2285.0">哥本哈根</text></g>
         <g><rect class="inset" x="690" y="612" width="284" height="84" rx="12"/>
           <text x="708" y="640" font-size="15" font-weight="800" fill="var(--ink)">丹麦 · 哥本哈根</text>
-          <text x="708" y="662" font-size="12" fill="var(--ink2)">D1–2 / D13–14</text>
+          <text x="708" y="662" font-size="12" fill="var(--ink2)">D1 / D13–14</text>
           <text x="708" y="680" font-size="12" fill="var(--ink2)">Wakeup Borgergade</text></g>
       </svg>
       <div class="chips" id="chips"></div>
@@ -307,8 +310,8 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
   <section>
     <h2><svg class="icon"><use href="#i-list"/></svg>行程概览 · 15 天一览</h2>
     <div class="ov" id="overview"><a href="#D1"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D1</span><span class="odate mono">9.23 周三</span></span><span class="otitle">北京 ✈ 哥本哈根 · 倒时差</span><span class="ometa">— · 🏨 Wakeup CPH</span></a>
-<a href="#D2"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D2</span><span class="odate mono">9.24 周四</span></span><span class="otitle">哥本哈根经典一日 + 始祖鸟</span><span class="ometa">步行+地铁 · 🏨 Wakeup CPH</span></a>
-<a href="#D3"><span class="od"><span class="odnum mono" style="background:#D9622B">D3</span><span class="odate mono">9.25 周五</span></span><span class="otitle">✈ 雷克雅未克 · 取车</span><span class="ometa">47km · 🏨 Fosshotel RVK</span></a>
+<a href="#D2"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D2</span><span class="odate mono">9.24 周四</span></span><span class="otitle">买鸟半日 → ✈ 冰岛夜航取车</span><span class="ometa">47km 夜驾 · 🏨 Fosshotel RVK</span></a>
+<a href="#D3"><span class="od"><span class="odnum mono" style="background:#D9622B">D3</span><span class="odate mono">9.25 周五</span></span><span class="otitle">雷克雅未克整日 · 装备采购</span><span class="ometa">0km · 🏨 Fosshotel RVK</span></a>
 <a href="#D4"><span class="od"><span class="odnum mono" style="background:#1F5FA8">D4</span><span class="odate mono">9.26 周六</span></span><span class="otitle">黄金圈 · Friðheimar 花少午餐</span><span class="ometa">185km · 🏨 蓝巴·桑拿</span></a>
 <a href="#D5"><span class="od"><span class="odnum mono" style="background:#12805E">D5</span><span class="odate mono">9.27 周日</span></span><span class="otitle">南岸六连 → 维克</span><span class="ometa">190km · 🏨 Vík Apts</span></a>
 <a href="#D6"><span class="od"><span class="odnum mono" style="background:#7C5CBF">D6</span><span class="odate mono">9.28 周一</span></span><span class="otitle">★冰川徒步 → 冰河湖自由拍 → 霍芬</span><span class="ometa">205km · 🏨 Seljavellir</span></a>
@@ -317,8 +320,8 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 <a href="#D9"><span class="od"><span class="odnum mono" style="background:#C2415B">D9</span><span class="odate mono">10.1 周四</span></span><span class="otitle">★逆时针环半岛</span><span class="ometa">230km · 🏨 福斯·斯奈山</span></a>
 <a href="#D10"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D10</span><span class="odate mono">10.2 周五</span></span><span class="otitle">半岛慢生活</span><span class="ometa">0–80km · 🏨 福斯·斯奈山</span></a>
 <a href="#D11"><span class="od"><span class="odnum mono" style="background:#5E8C31">D11</span><span class="odate mono">10.3 周六</span></span><span class="otitle">返雷市 · 完整 City Walk</span><span class="ometa">190km · 🏨 Center Plaza</span></a>
-<a href="#D12"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D12</span><span class="odate mono">10.4 周日</span></span><span class="otitle">博物馆日 · 雷市收尾</span><span class="ometa">0km · 🏨 Center Plaza</span></a>
-<a href="#D13"><span class="od"><span class="odnum mono" style="background:#64748B">D13</span><span class="odate mono">10.5 周一</span></span><span class="otitle">从容早晨 · 还车 ✈ 哥本哈根</span><span class="ometa">47km · 🏨 Wakeup CPH</span></a>
+<a href="#D12"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D12</span><span class="odate mono">10.4 周日</span></span><span class="otitle">雷市收尾 → 还车 ✈ 哥本哈根</span><span class="ometa">47km · 🏨 Wakeup CPH</span></a>
+<a href="#D13"><span class="od"><span class="odnum mono" style="background:#64748B">D13</span><span class="odate mono">10.5 周一</span></span><span class="otitle">哥本哈根经典整日</span><span class="ometa">步行+地铁 · 🏨 Wakeup CPH</span></a>
 <a href="#D14"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D14</span><span class="odate mono">10.6 周二</span></span><span class="otitle">哥本哈根整日 · 购物主场 + 万圣节蒂沃利</span><span class="ometa">步行 · 🏨 Wakeup CPH</span></a>
 <a href="#D15"><span class="od"><span class="odnum mono" style="background:#8A8D8A">D15</span><span class="odate mono">10.7 周三</span></span><span class="otitle">退税 · 返京</span><span class="ometa">— · 🏨 回京</span></a></div>
   </section>
@@ -336,8 +339,8 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
         <div class="it"><div class="t"><span class="tm mono">18:30</span></div><div class="c">Wakeup Borgergade 寄存入住<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Wakeup+Copenhagen+Borgergade">Wakeup Copenhagen Borgergade ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c">新港 Nyhavn 彩色房子倒时差遛弯<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Nyhavn">Nyhavn ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">19:30</span></div><div class="c">晚餐：新港岸边（Hyttefadet 4.5 分近新港）或 Restaurant Uva（4.9 分）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Nyhavn">Nyhavn ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">·</span></div><div class="c">⚠ 始祖鸟今天买不了（店 19:00 关门）——挪 D2 上午，动线已排好</div></div>
-        <div class="it"><div class="t"><span class="tm mono">22:00</span></div><div class="c">睡——明早才是倒时差关键</div></div>
+        <div class="it"><div class="t"><span class="tm mono">·</span></div><div class="c">⚠ 始祖鸟今天买不了（店 19:00 关门）——明天上午 10:00 开门买完直接去机场飞冰岛</div></div>
+        <div class="it"><div class="t"><span class="tm mono">22:00</span></div><div class="c">睡——明天是"买鸟+飞冰岛"紧凑日</div></div>
         <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：机场/市政厅/商场/地铁站——丹麦全免费</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：落地晚无预案，新港夜景本身就是方案</span></div></div>
   </div>
   </div>
@@ -345,44 +348,44 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 
 <details class="day" id="D2">
   <summary><span class="dnum mono" style="background:#8A8D8A">D2</span>
-    <span class="ddate mono">9.24 周四</span><span class="dtitle">哥本哈根经典一日 + 始祖鸟</span>
-    <span class="dkm mono">步行+地铁</span></summary>
+    <span class="ddate mono">9.24 周四</span><span class="dtitle">哥本哈根买鸟半日 → ✈ 冰岛夜航取车</span>
+    <span class="dkm mono">47km 夜驾</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button></div>
-  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">08:30</span></div><div class="c">小美人鱼（赶早没人）→ 吉菲昂喷泉<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Den+Lille+Havfrue">Den Lille Havfrue ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">10:00</span></div><div class="c"><b>始祖鸟 Arc'teryx Pilestræde 16</b>（新店 · 周四 10–19）+ 隔壁街 April 咖啡（全球#3）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Arc%27teryx+Copenhagen">Arc'teryx Copenhagen ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">11:00</span></div><div class="c"><b>ILLUM 商场</b>：注册会员首单 9 折 · <b>5 楼户外折扣区有鸟 7 折</b>（折上折≈国内 5 折）· Georg Jensen 9 折再退 14–15%<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Illum+Copenhagen">Illum Copenhagen ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">11:30</span></div><div class="c">阿美琳堡宫卫兵换岗<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Amalienborg">Amalienborg ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">12:30</span></div><div class="c">Torvehallerne 市场午餐：Hallernes 开放三明治（鱼籽虾仁款）+ HAV 扇贝 + Den Grønne Kutter 烤海虾 + Coffee Collective 手冲<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Torvehallerne">Torvehallerne ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">14:30</span></div><div class="c">新港运河游船 1h（~95 DKK）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Nyhavn">Nyhavn ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">16:00</span></div><div class="c">Strøget 步行街 + La Cabra 咖啡（Møntergade 12）+ 圆塔<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Str%C3%B8get+Copenhagen">Strøget Copenhagen ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c">晚餐：Maple Casual Dining（谷歌 4.9 · 须提前一天订=今晚订！）/ Høst 新北欧 / Marv & Ben 米其林推荐；甜品 La Glace<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Maple+Casual+Dining">Maple Casual Dining ↗</a><span class="badge">今晚订明天的位</span></div></div>
-        <div class="it"><div class="t"><span class="tm mono">22:00</span></div><div class="c">收拾随身包——明早飞冰岛</div></div>
-        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：商场 Illum/magasins · Torvehallerne · 地铁站 全免费</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：游船停开就逛 Illum 商场+圆塔</span></div></div>
-        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Den+Lille+Havfrue&destination=Str%C3%B8get+Copenhagen&waypoints=Torvehallerne%7CAmalienborg%7CNyhavn"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
+  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">09:45</span></div><div class="c">到<b>始祖鸟 Arc'teryx Pilestræde 16</b> 门口（10:00 开门第一批进）——买冲锋衣/软壳，<b>保留退税单</b><a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Arc%27teryx+Copenhagen">Arc'teryx Copenhagen ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">11:30</span></div><div class="c">隔壁街 April 咖啡（全球#3）歇脚 · 富余就去 ILLUM 5 楼折扣区补漏<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Illum+Copenhagen">Illum Copenhagen ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">12:00</span></div><div class="c">回酒店取行李退房 → 12:45 地铁去 CPH 机场</div></div>
+        <div class="it"><div class="t"><span class="tm mono">15:00</span></div><div class="c"><b>机场办退税</b>（飞冰岛=出欧盟海关，今天买的鸟当场退 13–15%；商品随身备查，预留 1h）</div></div>
+        <div class="it"><div class="t"><span class="tm mono">16:55</span></div><div class="c"><b>FI209 起飞 CPH→KEF</b>（冰岛慢 2h · 含餐 · 准点率 96.67%）<span class="badge">✅已购票</span></div></div>
+        <div class="it"><div class="t"><span class="tm mono">18:10</span></div><div class="c">落地 KEF · <b>到达厅免税店买酒</b>（比市区便宜 30–50%）</div></div>
+        <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c"><b>Blue 取车 · Tucson 四驱</b>：穿梭巴士 5 分钟（跟「Car Rental Shuttle Bus / Bílaleigur」指示牌）· 办手续+<b>绕车拍视频</b>（轮毂/玻璃/油表/里程表）<span class="badge">✅已订 · 到店付</span></div></div>
+        <div class="it"><div class="t"><span class="tm mono">20:15</span></div><div class="c">Rt41 高速 45 分钟夜驾进城（开大灯慢点开）→ Fosshotel Reykjavík 入住（有停车场）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fosshotel+Reykjavik">Fosshotel Reykjavik ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">20:45</span></div><div class="c">酒店附近简餐：Himalaya Shanti 印度菜（步行 5 分钟）/ Noodle Station<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Himalaya+Shanti+Reykjavik">Himalaya Shanti ↗</a></div></div>
+        <div class="oper-img"><img loading="lazy" src="images/car-pickup-check.webp" alt="car-pickup-check"></div>
+        <div class="oper-img"><img loading="lazy" src="images/car-signs-road.webp" alt="car-signs-road"></div>
+        <div class="oper-img"><img loading="lazy" src="images/car-airport-shuttle.webp" alt="car-airport-shuttle"></div>
+        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：CPH 机场 · KEF 机场 · 全免费</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：夜航+夜驾照常；大风延误就守着 Blue 柜台（末班摆渡 ~23:00）</span></div></div>
+        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Keflavik+International+Airport&destination=Fosshotel+Reykjavik"><svg class="icon"><use href="#i-nav"/></svg> KEF→酒店导航</a>
   </div>
   </div>
 </details>
 
 <details class="day" id="D3">
   <summary><span class="dnum mono" style="background:#D9622B">D3</span>
-    <span class="ddate mono">9.25 周五</span><span class="dtitle">✈ 雷克雅未克 · 取车</span>
-    <span class="dkm mono">47km</span></summary>
+    <span class="ddate mono">9.25 周五</span><span class="dtitle">雷克雅未克整日 · City Walk + 装备采购</span>
+    <span class="dkm mono">0km 车停酒店</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button><button class="tabbtn" data-tab="photo">📷 照片 (1)</button><button class="tabbtn" data-tab="map">🗺 地图</button></div>
-  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">11:00</span></div><div class="c">退房 → 地铁 15 分钟去 CPH 机场</div></div>
-        <div class="it"><div class="t"><span class="tm mono">14:00</span></div><div class="c">FI305 起飞（Standard 含 23kg 托运）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">15:20</span></div><div class="c">落地 KEF · <b>到达厅免税店买酒</b>（比市区便宜 30–50%）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">15:40</span></div><div class="c">出海关→取行李→找<b>穿梭巴士候车点</b>（跟「Car Rental Shuttle Bus / Bílaleigur」指示牌走，图解见下方）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">16:15</span></div><div class="c">取车：穿梭巴士 5 分钟→租车中心 · 办手续+<b>绕车拍视频</b>（轮毂/玻璃/油表/里程表）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Keflavik+International+Airport">Keflavik International Airport ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">17:15</span></div><div class="c">Fosshotel Reykjavík 入住（有停车场）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fosshotel+Reykjavik">Fosshotel Reykjavik ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">18:00</span></div><div class="c">Bæjarins Beztu 全料热狗 ~880 ISK<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=B%C3%A6jarins+Beztu+Pylsur">Bæjarins Beztu Pylsur ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c">哈帕音乐厅（免费 · 二三层拍剪影）→ 太阳航海者<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Harpa+Concert+Hall">Harpa Concert Hall ↗</a></div></div>
+  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">09:30</span></div><div class="c"><b>哈尔格里姆教堂登塔</b>（1,400 ISK · 趁无人拍彩虹街全景）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hallgr%C3%ADmskirkja">Hallgrímskirkja ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">10:00</span></div><div class="c">彩虹街 → Brauð&Co 肉桂卷 → Valdís 花少冰淇淋 → MJÚK 帽（摸了再买）→ Omnom 巧克力</div></div>
+        <div class="it"><div class="t"><span class="tm mono">10:30</span></div><div class="c"><b>装备采购（买穿上路的）</b>：66°North 旗舰店冲锋衣+防水裤 → Cintamani / Zo-On 便宜一档——先买防水裤+抓绒，尺码偏大偏断货上午来<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=66%C2%B0North+Reykjavik">66°North ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">12:00</span></div><div class="c">午餐 Messinn 铁锅鱼（招牌煎鱼+面包蘸汁）或 Bæjarins Beztu 全料热狗 ~880<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Messinn+Reykjavik">Messinn ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">13:30</span></div><div class="c">托宁湖天鹅野鸭 → 中国博物馆（花少出镜）顺路</div></div>
+        <div class="it"><div class="t"><span class="tm mono">14:30</span></div><div class="c">哈帕音乐厅（免费 · 二三层拍剪影）→ 太阳航海者<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Harpa+Concert+Hall">Harpa Concert Hall ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">15:30</span></div><div class="c"><b>Perlan 珍珠楼</b>（通票 7,090：全部展览+真冰洞+极光球幕+360° 观景台 · 冰洞 0°C 带外套 · 开车 8 分钟）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Perlan+Reykjavik">Perlan ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">17:30</span></div><div class="c">Sportís（Skeifan 11 · 开车 10 分钟）补手套/帽子/羊毛袜 + 超市买明早早餐<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sportis+Reykjavik">Sportís ↗</a></div></div>
         <div class="it"><div class="t"><span class="tm mono">19:30</span></div><div class="c">Sjávargrillið 花少同款晚餐：慢煮鳕鱼/烤鹿肉/贝汤<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sj%C3%A1vargrilli%C3%B0">Sjávargrillið ↗</a><span class="badge">订位</span></div></div>
-        <div class="it"><div class="t"><span class="tm mono">·</span></div><div class="c">彩虹街快闪（19:40 才天黑）；Bónus 采购挪到明早</div></div>
-        <div class="oper-img"><img loading="lazy" src="images/car-pickup-check.webp" alt="car-pickup-check"></div>
-        <div class="oper-img"><img loading="lazy" src="images/car-signs-road.webp" alt="car-signs-road"></div>
-        <div class="oper-img"><img loading="lazy" src="images/car-airport-shuttle.webp" alt="car-airport-shuttle"></div>
-        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：KEF 机场 · 哈帕（~200 ISK）· 旧港餐厅</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：坏天气照常：哈帕音乐厅+热狗+花少晚餐全是室内/短途</span></div></div>
-        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Keflavik+International+Airport&destination=Fosshotel+Reykjavik&waypoints=B%C3%A6jarins+Beztu+Pylsur%7CHarpa+Concert+Hall"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
+        <div class="it"><div class="t"><span class="tm mono">·</span></div><div class="c">今晚把新装备全试穿（穿过不能退税，送人的毛衣 10.3 再买）；明早 08:00 Bónus 大采购后出发黄金圈</div></div>
+        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：哈帕（~200 ISK）· Perlan 含票 · 旧港餐厅</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：哈帕+Perlan+博物馆全室内，购物线全程室内</span></div></div>
+        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Hallgr%C3%ADmskirkja&destination=Perlan&waypoints=66%C2%B0North%20Reykjavik%7CHarpa%20Concert%20Hall%7CMessinn%20Reykjavik"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
   </div>
   <div class="tabpan" data-tab="photo"><div class="pgrid"><div class="ph"><img loading="lazy" src="images/d12-harpa.webp" alt="d12-harpa"></div></div></div>
   <div class="tabpan" data-tab="map"><div class="mwrap"><img class="mimg" loading="lazy" src="images/map-reykjavik-citywalk.webp" alt="map-reykjavik-citywalk"></div></div>
@@ -563,18 +566,19 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 
 <details class="day" id="D12">
   <summary><span class="dnum mono" style="background:#8A8D8A">D12</span>
-    <span class="ddate mono">10.4 周日</span><span class="dtitle">博物馆日 · 雷市收尾</span>
-    <span class="dkm mono">0km</span></summary>
+    <span class="ddate mono">10.4 周日</span><span class="dtitle">雷市收尾 → 还车 ✈ 哥本哈根</span>
+    <span class="dkm mono">47km</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button><button class="tabbtn" data-tab="photo">📷 照片 (2)</button></div>
   <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">08:30</span></div><div class="c">Sandholt 早餐（北非蛋/莓果华夫饼）或 Brauð & Co 肉桂卷<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sandholt+Bakery">Sandholt Bakery ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">09:30</span></div><div class="c"><b>Perlan 通票 7,090</b>（真冰洞 0°C <b>进馆带薄外套</b>+Áróra 极光球幕+360°）——观鲸取消后的上午主场<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Perlan">Perlan ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">12:30</span></div><div class="c">午餐：<b>Sægreifinn 龙虾汤</b>（旧港绿房子）/ Svarta Kaffiíd 面包碗 / Just Wingin' It 鸡翅<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=S%C3%A6greifinn">Sægreifinn ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">14:00</span></div><div class="c">下午任选：<b>Whales of Iceland 巨鲸模型馆 4,290</b>（不观鲸的"陆地平替"）/ FlyOver 5,490 / 丁丁博物馆 3,500 / Illum·Epal 购物<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Whales+of+Iceland">Whales of Iceland ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">17:00</span></div><div class="c">☕ Mokka 老咖啡馆 / Roasters ⭐5（若 D11 没去）；哈帕音乐厅免费坐坐</div></div>
-        <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c">Messinn 铁锅煎鱼 Plokkfiskur / Íslenski Barinn 龙虾热狗；甜 Kaffi Loki 黑麦面包冰淇淋<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Messinn">Messinn ↗</a></div></div>
-        <div class="it"><div class="t"><span class="tm mono">·</span></div><div class="c">预报好→极光团兜底/极光船二刷；今晚打包行李</div></div>
-        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：酒店市区 · Perlan · 博物馆</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：Perlan/FlyOver/丁丁博物馆/Whales of Iceland/购物全室内（今天本来就该下雨）</span></div></div>
-        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Center+Hotels+Plaza&destination=Perlan&waypoints=Sandholt+Bakery%7CWhales+of+Iceland"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
+        <div class="it"><div class="t"><span class="tm mono">09:00</span></div><div class="c"><b>上午二选一</b>：A. 博物馆一个（<b>Perlan 通票 7,090</b> 真冰洞+极光球幕 / Whales of Iceland 4,290 / 国家博物馆 2,500）｜ B. <b>Sky Lagoon 早场 09:00–11:00</b> 海景温泉七步仪式——全程最后一个温泉<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sky+Lagoon">Sky Lagoon ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">11:30</span></div><div class="c">退房 → Rt41 沿路<b>加满油留小票</b></div></div>
+        <div class="it"><div class="t"><span class="tm mono">13:30</span></div><div class="c">KEF 还车（<b>拍照留底·流程图见下方</b>，还车后还有摆渡车，别晚于 14:00）→ <b>先退税再托运</b>：一层 Arion Bank 盖章 · 吊牌别剪 · >100k ISK 可能查验</div></div>
+        <div class="it"><div class="t"><span class="tm mono">15:00</span></div><div class="c">出发厅免税店最后补货：Omnom · Saltverk 火山盐 · Einstök 精酿</div></div>
+        <div class="it"><div class="t"><span class="tm mono">16:30</span></div><div class="c"><b>FI216 起飞 KEF→CPH</b>（申根内部无边检 · 准点率 96.67%）<span class="badge">✅已购票</span></div></div>
+        <div class="it"><div class="t"><span class="tm mono">21:45</span></div><div class="c">落地哥本哈根 → 22:30 Wakeup 入住（明天才是整天）</div></div>
+        <div class="oper-img"><img loading="lazy" src="images/car-return-process.webp" alt="car-return-process"></div>
+        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：机场</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：Sky Lagoon 风暴照开（温泉淋雨是冰岛体验）；航班延误：机场免税店慢慢逛</span></div></div>
+        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Center+Hotels+Plaza&destination=Keflavik+International+Airport&waypoints=Sky+Lagoon"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
   </div>
   <div class="tabpan" data-tab="photo"><div class="pgrid"><div class="ph"><img loading="lazy" src="images/d12-perlan.webp" alt="d12-perlan"></div><div class="ph"><img loading="lazy" src="images/d12-harpa.webp" alt="d12-harpa"></div></div></div>
   </div>
@@ -582,17 +586,19 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
 
 <details class="day" id="D13">
   <summary><span class="dnum mono" style="background:#64748B">D13</span>
-    <span class="ddate mono">10.5 周一</span><span class="dtitle">从容早晨 · 还车 ✈ 哥本哈根</span>
-    <span class="dkm mono">47km</span></summary>
+    <span class="ddate mono">10.5 周一</span><span class="dtitle">哥本哈根经典整日（原 D2 完整版）</span>
+    <span class="dkm mono">步行+地铁</span></summary>
   <div class="tabbar"><button class="tabbtn on" data-tab="plan">📋 行程</button></div>
-  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">09:00</span></div><div class="c">从容早晨：Sandholt / Laugavegur 最后补货；☕ Mokka 收尾（国家博物馆周一闭馆）</div></div>
-        <div class="it"><div class="t"><span class="tm mono">11:30</span></div><div class="c">退房 → Rt41 沿路加满油留小票</div></div>
-        <div class="it"><div class="t"><span class="tm mono">13:30</span></div><div class="c">KEF 还车（<b>拍照留底·流程图见下方</b>）→ <b>先退税再托运</b>：一层 Arion Bank 盖章 · 吊牌别剪 · >100k ISK 可能查验</div></div>
-        <div class="it"><div class="t"><span class="tm mono">16:30</span></div><div class="c">FI 起飞 KEF→CPH（申根内部无边检）<span class="badge">待出票</span></div></div>
-        <div class="it"><div class="t"><span class="tm mono">21:45</span></div><div class="c">落地哥本哈根 → Wakeup 入住（明天才是整天）</div></div>
-        <div class="oper-img"><img loading="lazy" src="images/car-return-process.webp" alt="car-return-process"></div>
-        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：机场</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：航班延误或早到：机场免税店慢慢逛</span></div></div>
-        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Center+Hotels+Plaza&destination=Keflavik+International+Airport"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
+  <div class="items"><div class="tabpan on" data-tab="plan"><div class="it"><div class="t"><span class="tm mono">08:30</span></div><div class="c">小美人鱼（赶早没人）→ 吉菲昂喷泉<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Den+Lille+Havfrue">Den Lille Havfrue ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">10:00</span></div><div class="c"><b>始祖鸟补货</b> Pilestræde 16（周一 10–19 · 9.24 没拿到的款今天找）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Arc%27teryx+Copenhagen">Arc'teryx Copenhagen ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">11:00</span></div><div class="c"><b>ILLUM 商场</b>：会员 9 折 · 5 楼折扣区 · Georg Jensen 9 折再退税<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Illum+Copenhagen">Illum Copenhagen ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">12:00</span></div><div class="c">阿美琳堡宫卫兵换岗（ILLUM 步行 8 分钟）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Amalienborg">Amalienborg ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">12:30</span></div><div class="c"><b>Torvehallerne 市场午餐</b>：Hallernes 开放三明治（鱼籽虾仁款）+ HAV 扇贝 + Coffee Collective 手冲（全球#2）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Torvehallerne">Torvehallerne ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">14:30</span></div><div class="c">新港运河游船 1h（~95 DKK）<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Nyhavn">Nyhavn ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">16:00</span></div><div class="c">Strøget 步行街 + La Cabra 咖啡（Møntergade 12 · 周一开门）+ 圆塔<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Str%C3%B8get+Copenhagen">Strøget Copenhagen ↗</a></div></div>
+        <div class="it"><div class="t"><span class="tm mono">19:00</span></div><div class="c">晚餐：<b>Maple Casual Dining</b>（谷歌 4.9 · 从 9.24 挪来 · <b>先查周一营业再订</b>· 绑卡不到扣款）/ Bloom 姐妹店 / Høst；甜品 La Glace<a class="loc" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Maple+Casual+Dining">Maple Casual Dining ↗</a></div></div>
+        <div class="daymeta"><div><svg class="icon"><use href="#i-wc"/></svg><span><b>厕所</b>：商场 Illum · Torvehallerne · 地铁站 全免费</span></div><div><svg class="icon"><use href="#i-rain"/></svg><span><b>坏天气</b>：游船停开就逛 Illum+圆塔+Designmuseum</span></div></div>
+        <a class="daynav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Den+Lille+Havfrue&destination=Str%C3%B8get+Copenhagen&waypoints=Torvehallerne%7CAmalienborg%7CNyhavn"><svg class="icon"><use href="#i-nav"/></svg> 打开这天全程导航</a>
   </div>
   </div>
 </details>
@@ -637,22 +643,22 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
     <div class="cards">
       <div class="bk"><h3><svg class="icon"><use href="#i-plane"/></svg>机票</h3>
         <div class="row"><span class="l"><b>CA877</b> 北京 T3 → 哥本哈根 T3<span class="tag ok">已出票</span></span><span class="r">9.23 13:25→17:05<br>托运 1×23kg · 含餐</span></div>
-        <div class="row"><span class="l"><b>FI305</b> 哥本哈根 → 凯夫拉维克<span class="tag ok">已出票</span></span><span class="r">9.25 14:00→15:20<br>Standard 含 23kg</span></div>
-        <div class="row"><span class="l"><b>FI 回程</b> 凯夫拉维克 → 哥本哈根<span class="tag warn">待出票</span></span><span class="r">10.5 16:30→21:45<br>选 Standard 含托运</span></div>
+        <div class="row"><span class="l"><b>FI209</b> 哥本哈根 → 凯夫拉维克<span class="tag ok">已购票</span></span><span class="r">9.24 16:55→18:10<br>含餐 · 核对行李额</span></div>
+        <div class="row"><span class="l"><b>FI216</b> 凯夫拉维克 → 哥本哈根<span class="tag ok">已购票</span></span><span class="r">10.4 16:30→21:45<br>含餐 · 核对行李额</span></div>
         <div class="row"><span class="l"><b>CA878</b> 哥本哈根 T3 → 北京 T3<span class="tag ok">已出票</span></span><span class="r">10.7 19:05→次日 09:55<br>托运 2×23kg</span></div>
       </div>
-      <div class="bk"><h3><svg class="icon"><use href="#i-car"/></svg>租车 · 10 个租赁日<span class="tag warn">待下单</span></h3>
-        <div class="row"><span class="l">四驱 SUV · Lotus（保险全）或 Blue（取车快）官网直订</span><span class="r">9.25 16:15 取<br>10.5 13:30 还</span></div>
-        <div class="row"><span class="l">SCDW + 碎石 GP + 风沙 SAAP + 道路救援</span><span class="r">确认路税日费条款<br>登记第二驾驶人</span></div>
+      <div class="bk"><h3><svg class="icon"><use href="#i-car"/></svg>租车 · 10 个租赁日<span class="tag ok">✅已订</span></h3>
+        <div class="row"><span class="l"><b>Blue Tucson 自动四驱</b> · 到店付 219,221 ISK（Blue+ 5% 折后）</span><span class="r">9.24 19:00 取<br>10.4 13:30 还</span></div>
+        <div class="row"><span class="l">LW 零自付全险（碎石+风沙+轮胎+风挡+底盘）+ 道路税 + 第二驾驶人 · 0 押金</span><span class="r">订单号待补录<br>驾照公证件随身</span></div>
       </div>
-      <div class="bk"><h3><svg class="icon"><use href="#i-bed"/></svg>酒店 · 14 晚全部订妥<span class="tag ok">可免费取消</span></h3>
-        <div class="row"><span class="l"><b>Wakeup Borgergade</b> · 哥本哈根</span><span class="r">9.23–25 / 10.5–07</span></div>
-        <div class="row"><span class="l"><b>Fosshotel Reykjavík</b> · 含停车</span><span class="r">9.25–26</span></div>
+      <div class="bk"><h3><svg class="icon"><use href="#i-bed"/></svg>酒店 · 14 晚<span class="tag warn">3 处待改期</span></h3>
+        <div class="row"><span class="l"><b>Wakeup Borgergade</b> · 哥本哈根 🔄</span><span class="r">9.23–24 / 10.4–07（3晚·晚到）</span></div>
+        <div class="row"><span class="l"><b>Fosshotel Reykjavík</b> · 含停车 🔄</span><span class="r">9.24–26（2晚）</span></div>
         <div class="row"><span class="l"><b>蓝巴斯塔德尔</b> · 桑拿+热水浴池房</span><span class="r">9.26–27 / 9.29–30</span></div>
         <div class="row"><span class="l"><b>Vík Apartments</b> · 露台公寓带厨房</span><span class="r">9.27–28</span></div>
         <div class="row"><span class="l"><b>Seljavellir Guesthouse</b> · 私浴含早</span><span class="r">9.28–29</span></div>
         <div class="row"><span class="l"><b>Fosshotel Stykkishólmur</b> · 镇中心带餐厅</span><span class="r">9.30–10.3</span></div>
-        <div class="row"><span class="l"><b>Center Plaza</b> · 广场边</span><span class="r">10.3–05</span></div>
+        <div class="row"><span class="l"><b>Center Plaza</b> · 广场边 🔄</span><span class="r">10.3（1晚）</span></div>
       </div>
       <div class="bk"><h3><svg class="icon"><use href="#i-ticket"/></svg>活动 · 2/5 已订<span class="tag warn">余3项待订</span></h3>
         <div class="row"><span class="l"><b>冰川徒步 ✅已订</b>：Troll Skaftafell 3h · 2 人（集合 09:10）</span><span class="r">9.28 09:30</span></div>
@@ -666,8 +672,11 @@ footer{margin-top:20px;text-align:center;color:var(--muted);font-size:12px;lette
     <h2><svg class="icon"><use href="#i-list"/></svg>出发前待办 · 点条目勾选 <span class="counter" id="pretripCount"></span></h2>
     <div id="pretripZone">
     <div class="tier t0 chkwrap"><h4>🔴 立刻就办（D-12）</h4><ul>
-      <li>FI 回程出票：10.5 16:30 KEF→CPH，Economy Standard（含 23kg 托运、可退改）</li>
-      <li>租车上单：Lotus / Blue，窗口 9.25 16:15 → 10.5 13:30（车型已定：Blue Tucson + LW 全险 + 第二驾驶）</li>
+      <li>🔄 三处酒店改期（新航班版）：Wakeup 改 9.23–24 + 10.4–07（备注22:30晚到）｜ Fosshotel RVK 改 9.24–26 两晚 ｜ Center Plaza 改 10.3 单晚——全部免费改，改完发订单号</li>
+      <li>FI209/FI216 核对行李额：若 Economy Light 不含托运 → 官网加购 1×23kg 或升 Standard</li>
+      <li>租车确认邮件补录订单号（Blue Tucson · 9.24 19:00 取 / 10.4 13:30 还 · 到店付）</li>
+      <li>极光船改订 10.3 21:00 场（选可免费改期款；预报差就退）</li>
+      <li>Maple 订位改 10.5 晚（先查周一营业）</li>
     </ul></div>
     <div class="tier t1 chkwrap"><h4>🟠 3 天内（D-9）</h4><ul>
       <li>Friðheimar 9.26 13:30 花少午餐 ｜ 蓝湖 10.3 已取消——若出票官网退</li>
@@ -1018,14 +1027,14 @@ const EVENTS = [
   "s": "CPH 落地 +02"
  },
  {
-  "t": "2026-09-25T14:00:00+02:00",
-  "n": "FI305 起飞 · 哥本哈根",
-  "s": "CPH → KEF"
+  "t": "2026-09-24T16:55:00+02:00",
+  "n": "FI209 起飞 · 哥本哈根（✅已购票）",
+  "s": "CPH → KEF · 15:00 前办退税"
  },
  {
-  "t": "2026-09-25T15:20:00+00:00",
-  "n": "抵达冰岛 · 16:15 取车",
-  "s": "KEF 落地 +00"
+  "t": "2026-09-24T18:10:00+00:00",
+  "n": "抵达冰岛 · 19:00 Blue 取车（✅已订）",
+  "s": "KEF 落地 +00 · 免税店买酒"
  },
  {
   "t": "2026-09-28T09:10:00+00:00",
@@ -1053,13 +1062,13 @@ const EVENTS = [
   "s": "提前 15 分钟到"
  },
  {
-  "t": "2026-10-05T13:30:00+00:00",
+  "t": "2026-10-04T13:30:00+00:00",
   "n": "KEF 还车（加满油留小票）",
   "s": "之后退税→值机"
  },
  {
-  "t": "2026-10-05T16:30:00+00:00",
-  "n": "FI 回程起飞 · 待出票",
+  "t": "2026-10-04T16:30:00+00:00",
+  "n": "FI216 回程起飞（✅已购票）",
   "s": "KEF → CPH"
  },
  {
